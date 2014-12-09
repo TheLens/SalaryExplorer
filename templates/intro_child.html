@@ -1,0 +1,42 @@
+{% extends "lens_layout.html" %}
+
+<!--child block contains the premium tag, not parent block -->
+
+{% block url %}
+{{url}}
+{% endblock %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+
+<style>
+
+input[type="text"] {
+	height: 100%;
+	width: 100%;
+}
+
+</style>
+
+<script type="text/javascript" src='{{ url_for('static', filename='js/salaryexplorer.js') }}'></script>
+
+<div class="row">
+	<div class="small-12 medium-12 columns">
+		<div class="small-12 columns">
+			<input id="input_box" type="text" name="namesearch" placeholder="Search by last name or title">
+		</div>
+		<div class="row">
+			<div class="small-12 medium-12 columns" id="search-examples">Example: Jindal or warden</div>
+		</div>
+		<div class="large-2 medium-3 small-12 columns">
+			<button id="search_button" class="button postfix searchButton">Search</button>
+		</div>
+	</div>
+</div>
+
+<div id="results" class="row">
+
+</div>
+
+{% endblock %}
