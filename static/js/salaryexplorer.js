@@ -23,8 +23,12 @@
          title = ""; // the dropbox is also set to "Agency" by default 
       }             
       var query = '/search/q=' + name_title + agency + department + title;
+      var url = document.URL.substring(0, document.URL.length - 1);   //remove the last slash
+      url = url + query;
+      var stateObj = { foo: "bar" };
       return $.get(query, function(data) {
         $("#results").html(data);
+        history.pushState(stateObj, "", query);
         return $(document).foundation();
       });
     });

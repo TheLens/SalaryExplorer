@@ -7,13 +7,14 @@ import sys
 sys.path.append("../")
 
 #config = ConfigParser.RawConfigParser()
-config_location = "/home/abe-lens-laptop/lens/salaryexplorer/app.cfg"
+config_location = "/home/abe/lens/salary_explorer/app.cfg"
 #config.read(config_location)
 
 Base = declarative_base()
 
 def getFromFile(field):
     config = ConfigParser.RawConfigParser()
+    #print config_location
     config.read(config_location)
     return config.get('Section1', field)
 
