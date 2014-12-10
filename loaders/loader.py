@@ -4,13 +4,12 @@ import csv
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-config_location = "/home/abe-lens-laptop/lens/salaryexplorer/app.cfg"
 
 sys.path.append('../classes')
 import classes
 
 
-config_location = "/home/abe-lens-laptop/lens/salaryexplorer/app.cfg"
+config_location = "/home/abe/lens/salary_explorer/app.cfg"
 
 Base = declarative_base()
 

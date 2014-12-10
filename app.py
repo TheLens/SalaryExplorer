@@ -37,6 +37,7 @@ cache = Cache(app,config={'CACHE_TYPE': 'simple'})
 
 engine = create_engine('postgresql://abe:' + databasepassword + '@' + server + ':5432/' + database)
 
+PAGE_SIZE = 25
 
 class Row():
     id = Column(Integer, primary_key=True)
@@ -179,25 +180,25 @@ def parse(q):
         else:
             department = []
     title = [p.replace("title=","") for p in parts if "title=" in p]
+    page = [p.replace("page=","") for p in parts if "page=" in p]
     agency = [p.replace("agency=","") for p in parts if "agency=" in p]
     if len(agency)==1:
         if not str(agency[0])=="undefined" and not str(agency[0]) == "Agency":
             agency = agency.pop()
         else:
             agency = []
-    print "titleee"
-    print title
     if len(title)==1:
-        print "ffff"
         if not str(title[0])=="undefined" and not str(title[0]) == "Title":
-            print "aaa"
             title = title.pop()
         else:
-            print "eee"
             title = []
-    page = [p.replace("page=","") for p in parts if "page=" in p]
     if len(page)==1:
-        page = page.pop()
+        if not str(page[0])=="undefined" and not str(page[0]) == "Page":
+            page = page.pop()
+        else:
+            page = 1
+    else:
+        page = 1 #default vaule
     q = [p.replace("q=","") for p in parts if "q=" in p]
     if len(q)==1:
         q = q.pop()
@@ -229,10 +230,12 @@ def build(query_terms):
         q = q.filter(Job.name==query_terms['title'])
     if len(query_terms['agency'])>0:
         q = q.filter(Agency.name==query_terms['agency'])
-    return q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id)   
+    q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
+    q = q.limit(PAGE_SIZE).offset(int(query_terms['page']) * PAGE_SIZE)
+    return q
 
 #search/?q=Attorney+General
-@app.route('/search/<string:q>', methods=['POST', 'GET'])
+@app.route('/search/<string:q>', methods=['POST'])
 def results(q):
     print q
     q = parse(q)
@@ -253,6 +256,28 @@ def results(q):
     departments.insert(0, "Department")
     return render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments)
 
+
+@app.route('/search/<string:q>', methods=['GET'])
+def results_from_URL(q):
+    print q
+    q = parse(q)
+    q = build(q)
+    Session = sessionmaker(bind=engine)
+    Session.configure(bind=engine)
+    session = Session()
+    results = query(q)
+    session.close()
+    rows = []
+    for r in results:
+        rows.append(Row(r[0], r[1], locale.currency(int(r[2]), grouping=True ).replace(".00", ""), r[3], r[4], r[5]))
+    jobs = list(set([r[3] for r in results]))
+    jobs.insert(0,"Title")
+    agencies = list(set([r[4] for r in results]))
+    agencies.insert(0,"Agency")
+    departments = list(set([r[5] for r in results]))
+    departments.insert(0, "Department")
+    html = render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments)
+    return render_template('intro_child.html', title="Search government salaries", url="salaries", contents=html)
 
 if __name__ == '__main__':
     app.run(debug=True)

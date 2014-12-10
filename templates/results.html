@@ -95,3 +95,9 @@ border: 1px solid #bbb;
 	</tbody>
 	</table>
 </div>
+
+{% if results|length > 5 %}
+    <div class="small-2 large-2 medium-2 columns left">
+    <div class="lensred left" id="back"> Back </div><div class="lensred right" id="forward"> Forward </div>
+    </div>
+{% endif %}
