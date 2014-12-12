@@ -11,11 +11,14 @@
 {% block content %}
 <!-- Load c3.css -->
 <link href="https://s3-us-west-2.amazonaws.com/lens-app-template/external_libraries/c3.js/c3.css" rel="stylesheet" type="text/css">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.css" rel="stylesheet" type="text/css">
 
 <!-- Load d3.js and c3.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js" charset="utf-8"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js" charset="utf-8"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/c3/0.4.7/c3.min.js" charset="utf-8"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation.min.js"></script>
+
 
 <div class="row" id="name">
 <div class="">
@@ -33,10 +36,13 @@
 
 
 </style>
-<h4 class="subheader left lensred">Agency: {{name}}</h4>
+<div class="row">
+<h6 class="subheader right"><span id="return_to_search">Return to search</span></h6>
+</div>
+<h4 class="subheader left">Agency: <span class="lensred">{{name}}<span></h4>
 </div>
 </div>
-
+<script type="text/javascript" src='{{ url_for('static', filename='js/salaryexplorer.js') }}'></script>
 <div class="row" id="totalworkers">
 <div class="">
 <h6 class="left">

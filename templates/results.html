@@ -1,33 +1,4 @@
 {{results_summary}}
-<div class="row">
-	Narrow your search
-	<ul class="button-group">
-
-		<div class="small-12 medium-4 large-4 columns">
-			<select id="titles">
-				{% for j in jobs %}
-				<option value="{{j}}">{{j}}</option>
-				{% endfor %}
-			</select>
-		</div>
-
-		<div class="small-12 medium-4 large-4 columns">
-			<select id="agencies">
-				{% for a in agencies%}
-				<option value="{{a}}">{{a}}</option>
-				{% endfor %}
-			</select>
-		</div>
-
-		<div class="small-12 medium-4 large-4 columns">
-			<select id="departments">
-				{% for d in departments %}
-				<option value="{{d}}">{{d}}</option>
-				{% endfor %}
-			</select>
-		</div>
-	</ul>
-</div>
 
 <style>
 .lensred{
@@ -71,32 +42,66 @@ border: 1px solid #bbb;
 }
 </style>
 
-<div class="row">
-	<table>
-	<thead>
-	<tr>
-	<th>Name</th>
-	<th>Salary</th>
-	<th>Title</th>
-	<th>Agency</th>
-	<th>Department</th>
-	</tr>
-	</thead>
-	<tbody>
-	{% for row in results %}
-	<tr>
-		<td class="name">{{ row.last }}, {{ row.first }}</td>
-		<td class="salary ">{{ row.annualsalary }}</td>
-		<td class="title ">{{ row.title }}</td>
-		<td class="agency "><a class="lensred" href="http://localhost:5000/agency/{{ row.agency }}">{{ row.agency }}</a></td>
-		<td class="department ">{{ row.department }}</td>
-	</tr>
-	{% endfor %}
-	</tbody>
-	</table>
-</div>
+{% if results|length ==0 %}
+     <div> No Results</div>
+{% else %}
+	<div class="row">
+		Narrow your search
+		<ul class="button-group">
 
-{% if results|length > 5 %}
+			<div class="small-12 medium-4 large-4 columns">
+				<select id="titles">
+					{% for j in jobs %}
+					<option value="{{j}}">{{j}}</option>
+					{% endfor %}
+				</select>
+			</div>
+
+			<div class="small-12 medium-4 large-4 columns">
+				<select id="agencies">
+					{% for a in agencies%}
+					<option value="{{a}}">{{a}}</option>
+					{% endfor %}
+				</select>
+			</div>
+
+			<div class="small-12 medium-4 large-4 columns">
+				<select id="departments">
+					{% for d in departments %}
+					<option value="{{d}}">{{d}}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</ul>
+	</div>
+	<div class="row">
+		<table>
+		<thead>
+		<tr>
+		<th>Name</th>
+		<th>Salary</th>
+		<th>Title</th>
+		<th>Agency</th>
+		<th>Department</th>
+		</tr>
+		</thead>
+		<tbody>
+		{% for row in results %}
+		<tr>
+			<td class="name">{{ row.last }}, {{ row.first }}</td>
+			<td class="salary ">{{ row.annualsalary }}</td>
+			<td class="title ">{{ row.title }}</td>
+			<td class="agency "><a class="lensred" href="http://localhost:5000/agency/{{ row.agency }}">{{ row.agency }}</a></td>
+			<td class="department ">{{ row.department }}</td>
+		</tr>
+		{% endfor %}
+		</tbody>
+		</table>
+	</div>
+{% endif %}
+
+
+{% if results_total > page_length %}
     <div class="small-2 large-2 medium-2 columns left">
     <div class="lensred left" id="back"> Back </div><div class="lensred right" id="forward"> Forward </div>
     </div>

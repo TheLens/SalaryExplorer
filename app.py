@@ -231,18 +231,21 @@ def build(query_terms):
     if len(query_terms['agency'])>0:
         q = q.filter(Agency.name==query_terms['agency'])
     q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
-    q = q.limit(PAGE_SIZE).offset(int(query_terms['page']) * PAGE_SIZE)
+    q = q
     return q
 
 #search/?q=Attorney+General
 @app.route('/search/<string:q>', methods=['POST'])
 def results(q):
-    print q
-    q = parse(q)
-    q = build(q)
+    query_terms = parse(q)
+    q = build(query_terms)
+    results_total = q.count()
+    q = q.limit(PAGE_SIZE).offset(int(query_terms['page']) * PAGE_SIZE)
     Session = sessionmaker(bind=engine)
     Session.configure(bind=engine)
     session = Session()
+    results_total = q.count()
+    q = q.limit(PAGE_SIZE).offset(int(query_terms['page']) * PAGE_SIZE)
     results = query(q)
     session.close()
     rows = []
@@ -254,17 +257,20 @@ def results(q):
     agencies.insert(0,"Agency")
     departments = list(set([r[5] for r in results]))
     departments.insert(0, "Department")
-    return render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments)
+    print "results_total {}".format(str(results_total))
+    return render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, page_length=PAGE_SIZE, results_total=results_total)
 
 
 @app.route('/search/<string:q>', methods=['GET'])
 def results_from_URL(q):
-    print q
-    q = parse(q)
-    q = build(q)
+    query_terms = parse(q)
+    q = build(query_terms)
+    results_total = q.count()
+    q = q.limit(PAGE_SIZE).offset(int(query_terms['page']) * PAGE_SIZE)
     Session = sessionmaker(bind=engine)
     Session.configure(bind=engine)
     session = Session()
+    results_total = q.count()
     results = query(q)
     session.close()
     rows = []
@@ -276,7 +282,8 @@ def results_from_URL(q):
     agencies.insert(0,"Agency")
     departments = list(set([r[5] for r in results]))
     departments.insert(0, "Department")
-    html = render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments)
+    html = render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, page_length=PAGE_SIZE, results_total=results_total)
+    print "results_total {}".format(str(results_total))
     return render_template('intro_child.html', title="Search government salaries", url="salaries", contents=html)
 
 if __name__ == '__main__':
