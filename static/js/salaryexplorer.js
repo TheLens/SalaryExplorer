@@ -34,42 +34,74 @@ function get_page(){
 }
 
 function post_query(page){
+    console.log(page);
+    page = page || 1;
+    console.log(page);
     var query = get_query() + "&page=" + page;
     var url = document.URL.substring(0, document.URL.length - 1);
     url = url + query;
     var stateObj = { foo: "bar" }; 
     return $.post(query, function(data) {
-           $("#results").html(data);
-            history.pushState(stateObj, "", query);
-            set_handlers();
-            return $(document).foundation();
+        var agency = $("#agencies").val();
+        var department = $("#departments").val();
+        var title = $("#title").val();
+        $("#results").html(data);
+        if (typeof agency != "undefined") {
+            $("#agencies").val(agency);
+        }
+        if (typeof department != "undefined") {
+            $("#departments").val(department);
+        }
+        if (typeof title != "undefined") {
+            $("#title").val(title);
+        }
+        history.pushState(stateObj, "", query);
+        set_handlers();
+        return $(document).foundation();
     });
 }
 
 function set_handlers(){
+
     $('#forward').click(function() {
-        var page = get_page() + 1;
-        page = parseInt(page + 1);
+        var page = get_page();
+        page = parseInt(page) + 1;
         post_query(page);
     });
 
     $('#back').click(function() {
         var page = get_page();
-        if (page > 2) {
+        if (page > 1) {
             page = parseInt(page -1);
+        }else{
+            alert("This page shows the first results");
         }
         post_query(page);
     });
+
     $("#return_to_search").click(function (){
         window.location = document.referrer;
     });
+
     $('#search_button').click(function() {
       var number;               
       page = get_page();
       post_query(page);
     });
-}
 
+    $("#agencies").change(function () {
+        post_query(); //leave page argument blank
+    });
+
+    $("#titles").change(function () {
+        post_query(); //leave page argument blank
+    });
+
+    $("#departments").change(function () {
+        post_query(); //leave page argument blank
+    });
+
+}
 
 $(document).ready(function() {
     set_handlers();

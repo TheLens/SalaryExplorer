@@ -3,7 +3,7 @@ import pprint
 import json
 import time 
 import ConfigParser
-from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, distinct
 from flask import Flask
 from flask import render_template
 from sqlalchemy import create_engine
@@ -203,7 +203,6 @@ def parse(q):
     if len(q)==1:
         q = q.pop()
     output['base'] = q
-    output['name'] = name
     output['department'] = department
     output['title'] = title
     output['agency'] = agency
@@ -222,8 +221,6 @@ def build(query_terms):
     if len(query_terms['base'])>0:
         q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name).\
             filter(Person.first.ilike('%' + query_terms['base'] + '%') | Person.last.ilike('%' + query_terms['base'] + '%'))
-    if len(query_terms['name'])>0:
-        q = q.filter(Person.first == query_terms['name'] | Person.last == query_terms['name'])
     if len(query_terms['department'])>0:
         q = q.filter(Department.name==query_terms['department'])
     if len(query_terms['title'])>0:
@@ -231,8 +228,50 @@ def build(query_terms):
     if len(query_terms['agency'])>0:
         q = q.filter(Agency.name==query_terms['agency'])
     q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
-    q = q
     return q
+
+
+def get_agencies(query_terms):
+    Session = sessionmaker(bind=engine)
+    Session.configure(bind=engine)
+    session = Session()
+    if len(query_terms['base'])>0:
+        q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name).\
+            filter(Person.first.ilike('%' + query_terms['base'] + '%') | Person.last.ilike('%' + query_terms['base'] + '%'))
+    if len(query_terms['department'])>0:
+        q = q.filter(Department.name==query_terms['department'])
+    if len(query_terms['title'])>0:
+        q = q.filter(Job.name==query_terms['title'])
+    if len(query_terms['agency'])>0:
+        q = q.filter(Agency.name==query_terms['agency'])
+    q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
+    print "query terms"
+    print query_terms
+    results = [i[4] for i in q.all()]
+    results = list(set(results))
+    results.sort()
+    return results
+
+
+def get_departments(query_terms):
+    Session = sessionmaker(bind=engine)
+    Session.configure(bind=engine)
+    session = Session()
+    if len(query_terms['base'])>0:
+        q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name).\
+            filter(Person.first.ilike('%' + query_terms['base'] + '%') | Person.last.ilike('%' + query_terms['base'] + '%'))
+    if len(query_terms['department'])>0:
+        q = q.filter(Department.name==query_terms['department'])
+    if len(query_terms['title'])>0:
+        q = q.filter(Job.name==query_terms['title'])
+    if len(query_terms['agency'])>0:
+        q = q.filter(Agency.name==query_terms['agency'])
+    q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
+    print "query terms"
+    results = [i[5] for i in q.all()]
+    results = list(set(results))
+    results.sort()
+    return results
 
 #search/?q=Attorney+General
 @app.route('/search/<string:q>', methods=['POST'])
@@ -240,24 +279,24 @@ def results(q):
     query_terms = parse(q)
     q = build(query_terms)
     results_total = q.count()
-    q = q.limit(PAGE_SIZE).offset(int(query_terms['page']) * PAGE_SIZE)
+    q = q.limit(PAGE_SIZE)
+    if (int(query_terms['page']) > 1):
+        q= q.offset(int(query_terms['page']) * PAGE_SIZE)
     Session = sessionmaker(bind=engine)
     Session.configure(bind=engine)
     session = Session()
-    results_total = q.count()
-    q = q.limit(PAGE_SIZE).offset(int(query_terms['page']) * PAGE_SIZE)
     results = query(q)
+    print results
     session.close()
     rows = []
     for r in results:
         rows.append(Row(r[0], r[1], locale.currency(int(r[2]), grouping=True ).replace(".00", ""), r[3], r[4], r[5]))
     jobs = list(set([r[3] for r in results]))
     jobs.insert(0,"Title")
-    agencies = list(set([r[4] for r in results]))
+    agencies = get_agencies(query_terms)
     agencies.insert(0,"Agency")
-    departments = list(set([r[5] for r in results]))
+    departments = get_departments(query_terms)
     departments.insert(0, "Department")
-    print "results_total {}".format(str(results_total))
     return render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, page_length=PAGE_SIZE, results_total=results_total)
 
 
@@ -266,24 +305,25 @@ def results_from_URL(q):
     query_terms = parse(q)
     q = build(query_terms)
     results_total = q.count()
-    q = q.limit(PAGE_SIZE).offset(int(query_terms['page']) * PAGE_SIZE)
+    q = q.limit(PAGE_SIZE)
+    if (int(query_terms['page']) > 1):
+        q= q.offset(int(query_terms['page']) * PAGE_SIZE)
     Session = sessionmaker(bind=engine)
     Session.configure(bind=engine)
     session = Session()
-    results_total = q.count()
     results = query(q)
+    print results
     session.close()
     rows = []
     for r in results:
         rows.append(Row(r[0], r[1], locale.currency(int(r[2]), grouping=True ).replace(".00", ""), r[3], r[4], r[5]))
     jobs = list(set([r[3] for r in results]))
     jobs.insert(0,"Title")
-    agencies = list(set([r[4] for r in results]))
+    agencies = get_agencies(query_terms)
     agencies.insert(0,"Agency")
-    departments = list(set([r[5] for r in results]))
+    departments = get_departments(query_terms)
     departments.insert(0, "Department")
     html = render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, page_length=PAGE_SIZE, results_total=results_total)
-    print "results_total {}".format(str(results_total))
     return render_template('intro_child.html', title="Search government salaries", url="salaries", contents=html)
 
 if __name__ == '__main__':

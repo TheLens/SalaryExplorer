@@ -1,3 +1,50 @@
 #input_box {
   width: 100% !important;
+  border: 1px solid grey;
+}
+
+
+input[type="text"] {
+	height: 100%;
+	width: 100%;
+}
+
+.lensred{
+	color: #B43018;
+	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+	table tr td {
+		display: block !important;
+		border: 0px solid white !important;
+	}
+	table{
+		border: none;
+	}
+	thead {
+		display: none;
+	}
+	tr {
+		border-bottom: 1px solid grey;
+		float: left;
+		width: 100%;
+	}
+}
+
+@media (max-width: 700px) {
+	.row {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		padding-left: 2px !important;
+		padding-right: 2px !important;
+	}
+}
+
+
+select {
+width: 300px;
+height: 40px;
+border: 1px solid #bbb;
 }
