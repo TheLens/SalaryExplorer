@@ -101,6 +101,15 @@ function set_handlers(){
         post_query(); //leave page argument blank
     });
 
+    $(document).keypress(function(e) {
+    if(e.keyCode == 13) 
+    {
+      var number;               
+      page = get_page();
+      post_query(page);
+    }
+  });
+
 }
 
 $(document).ready(function() {

@@ -7,7 +7,7 @@ import sys
 sys.path.append("../")
 
 #config = ConfigParser.RawConfigParser()
-config_location = "/home/abe/lens/salary_explorer/app.cfg"
+config_location = "/apps/salaryexplorer/app.cfg"
 #config.read(config_location)
 
 Base = declarative_base()

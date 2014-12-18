@@ -20,7 +20,7 @@ locale.setlocale( locale.LC_ALL, '')
 
 app = Flask(__name__)
 
-config_location = "app.cfg"
+config_location = "/apps/salaryexplorer/app.cfg"
 
 Base = declarative_base()
 
