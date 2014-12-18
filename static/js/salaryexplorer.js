@@ -34,6 +34,7 @@ function get_page(){
 }
 
 function post_query(page){
+    toggle_search_ui();
     console.log(page);
     page = page || 1;
     console.log(page);
@@ -57,8 +58,16 @@ function post_query(page){
         }
         history.pushState(stateObj, "", query);
         set_handlers();
-        return $(document).foundation();
+        toggle_search_ui();
     });
+}
+
+function toggle_search_ui() {
+    var e = document.getElementById('loading_gif');
+    if(e.style.visibility == 'visible')
+       e.style.visibility = 'hidden';
+    else
+      e.style.visibility = 'visible';
 }
 
 function set_handlers(){

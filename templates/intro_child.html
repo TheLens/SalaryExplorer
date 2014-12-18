@@ -27,8 +27,14 @@
 	</div>
 </div>
 
+<div id="loading_gif_row" class="row">
+    <div id="gif_holder" class="small-12 medium-12 large-12 columns centered">
+        <img id="loading_gif" src='{{ url_for('static', filename='images/ajax-loader.gif') }}'</img>
+    </div>
+</div>
+
 <div id="results" class="row">
-    {{contents|safe}}
+	{{contents|safe}}
 </div>
 
 {% endblock %}
