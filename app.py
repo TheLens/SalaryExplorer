@@ -238,6 +238,8 @@ def get_agencies(query_terms):
     if len(query_terms['base'])>0:
         q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name).\
             filter(Person.first.ilike('%' + query_terms['base'] + '%') | Person.last.ilike('%' + query_terms['base'] + '%'))
+    else: #handles blank queries from the UI
+        q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name)
     if len(query_terms['department'])>0:
         q = q.filter(Department.name==query_terms['department'])
     if len(query_terms['title'])>0:
@@ -260,6 +262,8 @@ def get_departments(query_terms):
     if len(query_terms['base'])>0:
         q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name).\
             filter(Person.first.ilike('%' + query_terms['base'] + '%') | Person.last.ilike('%' + query_terms['base'] + '%'))
+    else:  #handles blank queries from the UI
+        q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name)
     if len(query_terms['department'])>0:
         q = q.filter(Department.name==query_terms['department'])
     if len(query_terms['title'])>0:
