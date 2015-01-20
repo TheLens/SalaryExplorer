@@ -18,7 +18,7 @@ function get_query() {
     catch(err) {
        title = ""; // the dropbox is also set to "Agency" by default 
     } 
-    return '/search/q=' + name_title + agency + department + title;
+    return '/salaries/search/q=' + name_title + agency + department + title;
 }
 
 
