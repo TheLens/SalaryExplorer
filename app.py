@@ -75,7 +75,6 @@ def get_buckets(min, max, agency, nbuckets):
     Session = sessionmaker(bind=engine)
     Session.configure(bind=engine)
     session = Session()
-    n = "select * from people inner join agencies on people.agencyid=agencies.id where name='CRT-OFF OF TOURISM'"
     query = "select width_bucket(annualsalary, " + str(min) + ", " + str(max) + " ," + str(nbuckets) + "), count(*) from people inner join agencies on people.agencyid=agencies.id where name='" + agency + "' group by 1 order by 1;"
     connection = engine.connect()
     result = connection.execute(query)
@@ -163,6 +162,7 @@ def agency(a):
     for t in bucks:
         histogramlabels.append("$" + str(int(t[0])) + "-" + "$" + str(int(t[1])))
     histogramcounts = [b[2] for b in bucks]
+    session.close()
     return render_template('agency.html', name=a, histogramcounts=histogramcounts, average=avg, histogramlabels=histogramlabels, highestpaid=highestpaid, totalworkers=workercount, title="Search government salaries", url="salaries")
 
 

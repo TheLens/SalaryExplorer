@@ -1,2 +1,4 @@
+fabfile.py
 app.cfg
+*pyc
 classes/classes.pyc
