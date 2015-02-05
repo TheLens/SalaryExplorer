@@ -221,13 +221,18 @@ def build(query_terms):
     if len(query_terms['base'])>0:
         q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name).\
             filter(Person.first.ilike('%' + query_terms['base'] + '%') | Person.last.ilike('%' + query_terms['base'] + '%'))
+        print "adding base"
     if len(query_terms['department'])>0:
         q = q.filter(Department.name==query_terms['department'])
+        print "adding department"
     if len(query_terms['title'])>0:
         q = q.filter(Job.name==query_terms['title'])
+        print "adding title"
     if len(query_terms['agency'])>0:
         q = q.filter(Agency.name==query_terms['agency'])
+        print "adding agency"
     q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
+    print "built {}".format(q)
     return q
 
 
@@ -247,8 +252,6 @@ def get_agencies(query_terms):
     if len(query_terms['agency'])>0:
         q = q.filter(Agency.name==query_terms['agency'])
     q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
-    print "query terms"
-    print query_terms
     results = [i[4] for i in q.all()]
     results = list(set(results))
     results.sort()
@@ -271,14 +274,13 @@ def get_departments(query_terms):
     if len(query_terms['agency'])>0:
         q = q.filter(Agency.name==query_terms['agency'])
     q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
-    print "query terms"
     results = [i[5] for i in q.all()]
     results = list(set(results))
     results.sort()
     return results
 
 #search/?q=Attorney+General
-@app.route('/search/<string:q>', methods=['POST'])
+@app.route('/search/<path:q>', methods=['POST'])
 def results(q):
     query_terms = parse(q)
     q = build(query_terms)
@@ -304,7 +306,7 @@ def results(q):
     return render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, page_length=PAGE_SIZE, results_total=results_total)
 
 
-@app.route('/search/<string:q>', methods=['GET'])
+@app.route('/search/<path:q>', methods=['GET'])
 def results_from_URL(q):
     query_terms = parse(q)
     q = build(query_terms)
@@ -315,6 +317,8 @@ def results_from_URL(q):
     Session = sessionmaker(bind=engine)
     Session.configure(bind=engine)
     session = Session()
+    print "query terms"
+    print q
     results = query(q)
     print results
     session.close()
