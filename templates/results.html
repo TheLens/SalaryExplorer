@@ -50,30 +50,53 @@ border: 1px solid #bbb;
 		<ul class="button-group">
 
 			<div class="small-12 medium-4 large-4 columns">
-				<select id="titles">
-					{% for j in jobs %}
-					<option value="{{j}}">{{j}}</option>
-					{% endfor %}
-				</select>
+					{% if filtered_title %}
+						<div id="filtered-title-alert" data-alert class="alert-box secondary">
+						Agency: <span id="titles"> {{filtered_title}} </span>
+						<a href="#" id="titles-close" class="close">&times;</a>
+						</div>
+					{%else%}
+						<select id="titles">
+							{% for d in jobs %}
+								<option value="{{d}}">{{d}}</option>
+							{% endfor %}
+						</select>
+					{% endif %}
 			</div>
 
 			<div class="small-12 medium-4 large-4 columns">
-				<select id="agencies">
-					{% for a in agencies%}
-					<option value="{{a}}">{{a}}</option>
-					{% endfor %}
-				</select>
+					{% if filtered_agency %}
+						<div id="filtered-agency-alert" data-alert class="alert-box secondary">
+						Agency:  <span id="agencies"> {{filtered_agency}}</span>
+						<a href="#" id="agencies-close" class="close">&times;</a>
+						</div>
+					{%else%}
+						<select id="agencies">
+							{% for a in agencies%}
+								<option value="{{a}}">{{a}}</option>
+							{% endfor %}
+						</select>
+					{% endif %}
 			</div>
 
 			<div class="small-12 medium-4 large-4 columns">
-				<select id="departments">
-					{% for d in departments %}
-					<option value="{{d}}">{{d}}</option>
-					{% endfor %}
-				</select>
+					{% if filtered_department %}
+						<div id="filtered-department-alert" data-alert class="alert-box secondary">
+						Department: <span id="departments"> {{filtered_department}} </span>
+						<a href="#" id="departments-close" class="close">&times;</a>
+						</div>
+					{%else%}
+						<select id="departments">
+							{% for d in departments%}
+								<option value="{{d}}">{{d}}</option>
+							{% endfor %}
+						</select>
+					{% endif %}
 			</div>
+
 		</ul>
 	</div>
+
 	<div class="row">
 		<table>
 		<thead>
@@ -99,6 +122,20 @@ border: 1px solid #bbb;
 		</table>
 	</div>
 {% endif %}
+
+
+<script type="text/javascript">
+	$(".close").on("click", function(){
+		var idpart = this.id.replace("-close", "");
+		$("#" + idpart).val("undefined");
+		post_query(1);
+	});
+</script>
+
+<style type="text/css">
+	.alert {margin-right:2px}
+
+</style>
 
 
 {% if results_total > page_length %}

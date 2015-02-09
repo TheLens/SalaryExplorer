@@ -148,12 +148,10 @@ def agency(a):
     q = session.query(Person.first, Person.last, Person.annualsalary).\
             filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Agency.name == a).order_by(Person.annualsalary.desc()).limit(10)
     highestpaid = q.all()
-    print highestpaid
     highest = []
     for h in highestpaid:
         highest.append(Row(h[0], h[1], locale.currency(int(h[2]), grouping=True ).replace(".00", "")))
     highestpaid = highest
-    print highestpaid
     minsal = get_min(a)
     maxsal = get_max(a)
     bucks = get_buckets(minsal, maxsal, a, 10)
@@ -169,7 +167,6 @@ def agency(a):
 def parse(q):
     output = {}
     parts = q.split("&")
-    print parts
     name = [p.replace("name=","") for p in parts if "name=" in p]
     if len(name)==1:
         name=name.pop()
@@ -207,8 +204,6 @@ def parse(q):
     output['title'] = title
     output['agency'] = agency
     output['page'] = page
-    print "parse"
-    print output
     return output
 
 
@@ -221,18 +216,14 @@ def build(query_terms):
     if len(query_terms['base'])>0:
         q = session.query(Person.first, Person.last, Person.annualsalary, Job.name, Agency.name, Department.name).\
             filter(Person.first.ilike('%' + query_terms['base'] + '%') | Person.last.ilike('%' + query_terms['base'] + '%'))
-        print "adding base"
     if len(query_terms['department'])>0:
         q = q.filter(Department.name==query_terms['department'])
-        print "adding department"
     if len(query_terms['title'])>0:
         q = q.filter(Job.name==query_terms['title'])
-        print "adding title"
     if len(query_terms['agency'])>0:
         q = q.filter(Agency.name==query_terms['agency'])
-        print "adding agency"
     q = q.filter(Person.jobid == Job.id).filter(Person.agencyid == Agency.id).filter(Person.departmentid == Department.id) 
-    print "built {}".format(q)
+    session.close()
     return q
 
 
@@ -255,6 +246,8 @@ def get_agencies(query_terms):
     results = [i[4] for i in q.all()]
     results = list(set(results))
     results.sort()
+    results.insert(0,"Agency")
+    session.close()
     return results
 
 
@@ -277,6 +270,8 @@ def get_departments(query_terms):
     results = [i[5] for i in q.all()]
     results = list(set(results))
     results.sort()
+    results.insert(0, "Department")
+    session.close()
     return results
 
 #search/?q=Attorney+General
@@ -292,7 +287,6 @@ def results(q):
     Session.configure(bind=engine)
     session = Session()
     results = query(q)
-    print results
     session.close()
     rows = []
     for r in results:
@@ -300,10 +294,12 @@ def results(q):
     jobs = list(set([r[3] for r in results]))
     jobs.insert(0,"Title")
     agencies = get_agencies(query_terms)
-    agencies.insert(0,"Agency")
     departments = get_departments(query_terms)
-    departments.insert(0, "Department")
-    return render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, page_length=PAGE_SIZE, results_total=results_total)
+    filtered_department = query_terms['department']
+    filtered_title = query_terms['title']
+    filtered_agency = query_terms['agency']
+    session.close()
+    return render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, filtered_department=filtered_department, filtered_title=filtered_title, filtered_agency=filtered_agency, page_length=PAGE_SIZE, results_total=results_total)
 
 
 @app.route('/search/<path:q>', methods=['GET'])
@@ -317,10 +313,7 @@ def results_from_URL(q):
     Session = sessionmaker(bind=engine)
     Session.configure(bind=engine)
     session = Session()
-    print "query terms"
-    print q
     results = query(q)
-    print results
     session.close()
     rows = []
     for r in results:
@@ -328,10 +321,12 @@ def results_from_URL(q):
     jobs = list(set([r[3] for r in results]))
     jobs.insert(0,"Title")
     agencies = get_agencies(query_terms)
-    agencies.insert(0,"Agency")
     departments = get_departments(query_terms)
     departments.insert(0, "Department")
-    html = render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, page_length=PAGE_SIZE, results_total=results_total)
+    filtered_department = query_terms['department']
+    filtered_title = query_terms['title']
+    filtered_agency = query_terms['agency']
+    html = render_template('results.html', results=rows, jobs=jobs, agencies=agencies, departments=departments, filtered_department=filtered_department, filtered_title=filtered_title, filtered_agency=filtered_agency, page_length=PAGE_SIZE, results_total=results_total)
     return render_template('intro_child.html', title="Search government salaries", url="salaries", contents=html)
 
 if __name__ == '__main__':

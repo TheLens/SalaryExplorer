@@ -18,8 +18,8 @@ function get_query() {
     catch(err) {
        title = ""; // the dropbox is also set to "Agency" by default 
     }
-    //return '/search/q=' + name_title + agency + department + title; 
-    return '/salaries/search/q=' + name_title + agency + department + title;
+    return '/search/q=' + name_title + agency + department + title; 
+    //return '/salaries/search/q=' + name_title + agency + department + title;
 }
 
 
@@ -51,11 +51,20 @@ function post_query(page){
         if (typeof agency != "undefined") {
             $("#agencies").val(agency);
         }
+        else if (typeof agency === "undefined" || agency === "undefined")
+            $("#agencies").val("Agency");
+        }
         if (typeof department != "undefined") {
             $("#departments").val(department);
         }
+        else if (typeof department === "undefined" || department === "undefined"){
+            $("#departments").val("Department");
+        }
         if (typeof title != "undefined") {
             $("#title").val(title);
+        }
+        else if (typeof title === "undefined" || title === "undefined"){
+            $("#title").val("Title");
         }
         history.pushState(stateObj, "", query);
         set_handlers();
