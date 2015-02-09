@@ -48,24 +48,31 @@ function post_query(page){
         var department = $("#departments").val();
         var title = $("#title").val();
         $("#results").html(data);
-        if (typeof agency != "undefined") {
+        
+        if (agency === "undefined"){
+            $("#agencies").val("Agency");
+        } else if (typeof agency != "undefined") {
             $("#agencies").val(agency);
-        }
-        else if (typeof agency === "undefined" || agency === "undefined")
+        } else if (typeof agency === "undefined"){
             $("#agencies").val("Agency");
         }
-        if (typeof department != "undefined") {
+
+        if (department === "undefined") {
+            $("#departments").val("Department");
+        } else if (typeof department != "undefined") {
             $("#departments").val(department);
-        }
-        else if (typeof department === "undefined" || department === "undefined"){
+        } else if (typeof department === "undefined"){
             $("#departments").val("Department");
         }
-        if (typeof title != "undefined") {
+
+        if (title === "undefined") {
+            $("#title").val("Title");
+        } else if (typeof title != "undefined") {
             $("#title").val(title);
-        }
-        else if (typeof title === "undefined" || title === "undefined"){
+        } else if (typeof title === "undefined"){
             $("#title").val("Title");
         }
+
         history.pushState(stateObj, "", query);
         set_handlers();
         toggle_search_ui();
