@@ -1,18 +1,5 @@
-
-
 #loading_gif {
     visibility: hidden;
-}
-
-#input_box {
-  width: 100% !important;
-  border: 1px solid grey;
-}
-
-
-input[type="text"] {
-	height: 100%;
-	width: 100%;
 }
 
 .lensred{
