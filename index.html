@@ -7,9 +7,18 @@
 </head>
 
 <script type="text/javascript">
-  $.get('https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/gzips.csv.gz', function(d){
-        window.data = d;
-  });
+
+
+    function process(data){
+        window.salaries = $.csv.toObjects(data);
+    }
+
+$.ajax({
+  type: "GET",
+  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/gss.csv2.gz",
+  dataType: "text",
+  success: function(data) {process(data)}
+ });
 
 </script>
 
