@@ -110,7 +110,7 @@ function get_rows(results, page){
 
 function loadTable() {
     $("#results_status").html('');
-    var name = encodeURIComponent($('#namebox').val());
+    var name = encodeURIComponent($('#input_box').val());
     var data = {};
     data['department'] = $('#departments').val();
     data['position'] = $('#positions').val();
@@ -190,7 +190,7 @@ $(document).ready(function() {
 
     adjustWidth();
 
-    $("#searchButton").on("click", function() {
+    $("#search_button").on("click", function() {
         page = 1; //reset page to page 1 for new search
         loadTable();
     });

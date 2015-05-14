@@ -8,6 +8,7 @@
 <script src="js/jquery.csv-0.71.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/explorer.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+ <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
 
 <script type="text/javascript">
@@ -37,9 +38,21 @@ $.ajax({
     <div class="row">
       <div class="small-12 medium-12 columns" id="search-examples">Example: Jindal or warden</div>
     </div>
+
+    <div class="ui-widget">
+      <label for="tags">Department (Example: Municipal Court): </label>
+      <input id="departments"  class = "large-12 medium-12 small-12 columns">
+    </div>
+
+    <div class="ui-widget">
+      <label>Position (Example: Police Officer 1)</label>
+      <input id="positions" class = "large-12 medium-12 small-12 columns">
+    </div>
+
     <div class="large-2 medium-3 small-12 columns">
       <button id="search_button" class="button postfix searchButton">Search</button>
     </div>
+
   </div>
 </div>
 
