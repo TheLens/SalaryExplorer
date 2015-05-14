@@ -20,7 +20,13 @@
     output = {};
     for (var i = 1; i < split.length; i++) {
       var items = split[i].split("\t");
-      output[i-1] = items;
+      var item;
+      item['organization'] = items[0];
+      item['unit'] = items[1]
+      item['name'] = items[2]
+      item['job'] = items[6]
+      item['rate'] = items[7]
+      output[i-1] = item;
     }
     console.log("processed raw data");
     window.data = output;

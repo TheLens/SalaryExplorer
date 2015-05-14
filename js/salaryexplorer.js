@@ -46,7 +46,7 @@ function process_request(request){
 
     var result = {}, key;
 
-    var output = window.salaries; //start by assuming all values can be returned, then filter down
+    var output = window.data; //start by assuming all values can be returned, then filter down
 
     if (request['department']!="" && request['department']!="ALL" && request['department']!="FIRE: ALL" && request['department']!="POLICE: ALL"){
         output = _.filter(output, function(item){ return item['department'] == request['department']; });
@@ -55,13 +55,12 @@ function process_request(request){
         output = _.filter(output, function(item){ return item['department'].indexOf(temp_department.toUpperCase()) != -1; });   
     }
 
-    if (request['position']!="" && request['position']!="ALL"){
-        output = _.filter(output, function(item){ return item['position'] == request['position']; });
+    if (request['job']!="" && request['job']!="ALL"){
+        output = _.filter(output, function(item){ return item['job'].toUpperCase().indexOf(request['job'].toUpperCase()) != -1 });
     }
 
     if (request['name']!=""){
-        output = _.filter(output, function(item){ return item['first'].toUpperCase().indexOf(request['name'].toUpperCase()) != -1 || 
-                                                         item['last'].toUpperCase().indexOf(request['name'].toUpperCase()) != -1 });
+        output = _.filter(output, function(item){ return item['name'].toUpperCase().indexOf(request['name'].toUpperCase()) != -1 });
     }
 
     return output;
@@ -79,13 +78,13 @@ function get_row(item, id){
           <td class="first">' + item['first'].toUpperCase() + '</td>\
           <td class="last">' + item['last'].toUpperCase() + '</td>\
           <td class="department">' + item['department'].toUpperCase() + '</td>\
-          <td class="title">'+ item['position'].toUpperCase() +'</td>\
+          <td class="title">'+ item['job'].toUpperCase() +'</td>\
           <td id="'+ id + '" class="salary">'+ item['salary'].toUpperCase() +'</td></tr>';
     } else {
           $("#thead").remove(); // not in table mode
           return '<div class="tablerow">\
            <div class="namerow"><span class="first">' + item['last'].toUpperCase() + '</span> <span class="last">'+ item['first'].toUpperCase() + '</span></div>\
-           <div class="detailsrow"><span class="department">' + item['department'].toUpperCase() + ' | </span><span class="title">'+ item['position'].toUpperCase() +'</span></div>\
+           <div class="detailsrow"><span class="department">' + item['department'].toUpperCase() + ' | </span><span class="title">'+ item['job'].toUpperCase() +'</span></div>\
            <div><span id="'+ id + '" class="salary">'+ item['salary'].toUpperCase() +'</span></div></div>';
     }
 }
@@ -117,7 +116,7 @@ function loadTable() {
     var name = encodeURIComponent($('#input_box').val());
     var data = {};
     data['department'] = $('#departments').val();
-    data['position'] = $('#positions').val();
+    data['job'] = $('#positions').val();
     data['name'] = name;
     data['page'] = 1;
     $("#tbody").html("");
@@ -199,4 +198,30 @@ $(document).ready(function() {
         loadTable();
     });
 
+});
+
+function process(data){
+  var args = data;
+  console.log("processing raw data");
+  var split = data.split("\n");
+  output = {};
+  for (var i = 1; i < split.length; i++) {
+    var items = split[i].split("\t");
+    var item;
+    item['organization'] = items[0];
+    item['unit'] = items[1]
+    item['name'] = items[2]
+    item['job'] = items[6]
+    item['rate'] = items[7]
+    output[i-1] = item;
+  }
+  console.log("processed raw data");
+  window.data = output;
+}
+
+$.ajax({
+  type: "GET",
+  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/gss_tabs.csv.gz",
+  dataType: "text",
+  success: function(data) {process(data)}
 });
