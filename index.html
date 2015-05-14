@@ -11,37 +11,6 @@
  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 </head>
 
-<script type="text/javascript">
-  
-  function process(data){
-    var args = data;
-    console.log("processing raw data");
-    var split = data.split("\n");
-    output = {};
-    for (var i = 1; i < split.length; i++) {
-      var items = split[i].split("\t");
-      var item;
-      item['organization'] = items[0];
-      item['unit'] = items[1]
-      item['name'] = items[2]
-      item['job'] = items[6]
-      item['rate'] = items[7]
-      output[i-1] = item;
-    }
-    console.log("processed raw data");
-    window.data = output;
-  }
-
-  $.ajax({
-    type: "GET",
-    url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/gss_tabs.csv.gz",
-    dataType: "text",
-    success: function(data) {process(data)}
-  });
-
-</script>
-
-
 <script type="text/javascript" src='js/salaryexplorer.js'></script>
 
 <div class="row">
@@ -80,8 +49,7 @@
   <table id="myTable" class="tablesorter">
   <thead id="thead">
     <tr>
-      <th width="20%">First</th>
-      <th width="20%">Last</th>
+      <th width="20%">Name</th>
       <th width="20%">Department</th>
       <th width="20%">Position</th>
       <th width="20%">Salary</th>

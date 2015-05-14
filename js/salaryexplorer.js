@@ -60,7 +60,8 @@ function process_request(request){
     }
 
     if (request['name']!=""){
-        output = _.filter(output, function(item){ return item['name'].toUpperCase().indexOf(request['name'].toUpperCase()) != -1 });
+              
+       output = _.filter(output, function(item){ return item['name'].toUpperCase().indexOf(request['name'].toUpperCase()) != -1 });
     }
 
     return output;
@@ -75,17 +76,16 @@ function get_row(item, id){
     }
     if ($(window).width() > 500) {
           return '<tr data-total="16" data-page="0">\
-          <td class="first">' + item['first'].toUpperCase() + '</td>\
-          <td class="last">' + item['last'].toUpperCase() + '</td>\
-          <td class="department">' + item['department'].toUpperCase() + '</td>\
+          <td class="first">' + item['name'].toUpperCase() + '</td>\
+          <td class="department">' + item['organization'].toUpperCase() + '</td>\
           <td class="title">'+ item['job'].toUpperCase() +'</td>\
-          <td id="'+ id + '" class="salary">'+ item['salary'].toUpperCase() +'</td></tr>';
+          <td id="'+ id + '" class="salary">'+ item['rate'].toUpperCase() +'</td></tr>';
     } else {
           $("#thead").remove(); // not in table mode
           return '<div class="tablerow">\
-           <div class="namerow"><span class="first">' + item['last'].toUpperCase() + '</span> <span class="last">'+ item['first'].toUpperCase() + '</span></div>\
-           <div class="detailsrow"><span class="department">' + item['department'].toUpperCase() + ' | </span><span class="title">'+ item['job'].toUpperCase() +'</span></div>\
-           <div><span id="'+ id + '" class="salary">'+ item['salary'].toUpperCase() +'</span></div></div>';
+           <div class="namerow"><span class="first">' + item['name'].toUpperCase() + '</span> </div>\
+           <div class="detailsrow"><span class="department">' + item['organization'].toUpperCase() + ' | </span><span class="title">'+ item['job'].toUpperCase() +'</span></div>\
+           <div><span id="'+ id + '" class="salary">'+ item['rate'].toUpperCase() +'</span></div></div>';
     }
 }
 
@@ -204,16 +204,18 @@ function process(data){
   var args = data;
   console.log("processing raw data");
   var split = data.split("\n");
-  output = {};
+  output = [];
   for (var i = 1; i < split.length; i++) {
     var items = split[i].split("\t");
-    var item;
+    var item = {};
     item['organization'] = items[0];
     item['unit'] = items[1]
-    item['name'] = items[2]
+    item['name'] = items[3]
     item['job'] = items[6]
     item['rate'] = items[7]
-    output[i-1] = item;
+    if (!_.isUndefined(item['name'])){
+      output.push(item);
+    }
   }
   console.log("processed raw data");
   window.data = output;
