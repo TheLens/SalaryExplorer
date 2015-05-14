@@ -26,11 +26,15 @@ function add_positions(data){
 }
 
 $.get('https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/departments.csv.gz', function(data) {
+   console.log("adding departments");
    add_departments(data)
+   console.log("added departments");
 }, 'text');
 
 $.get('https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/orgs.csv.gz', function(data) {
-   add_positions(data)
+   console.log("adding positions");
+   add_positions(data);
+   console.log("added positions");
 }, 'text');
 
 

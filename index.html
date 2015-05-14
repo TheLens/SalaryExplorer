@@ -12,23 +12,31 @@
 </head>
 
 <script type="text/javascript">
-
-
-    function process(data){
-        window.salaries = $.csv.toObjects(data);
+  
+  function process(data){
+    var args = data;
+    console.log("processing raw data");
+    var split = data.split("\n");
+    output = {};
+    for (var i = 1; i < split.length; i++) {
+      var items = split[i].split("\t");
+      output[i-1] = items;
     }
+    console.log("processed raw data");
+    window.data = output;
+  }
 
-$.ajax({
-  type: "GET",
-  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/gss.csv2.gz",
-  dataType: "text",
-  success: function(data) {process(data)}
- });
+  $.ajax({
+    type: "GET",
+    url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/gss_tabs.csv.gz",
+    dataType: "text",
+    success: function(data) {process(data)}
+  });
 
 </script>
 
 
-<script type="text/javascript" src='js/city_salaries.js'></script>
+<script type="text/javascript" src='js/salaryexplorer.js'></script>
 
 <div class="row">
   <div class="small-12 medium-12 columns">
