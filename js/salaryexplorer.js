@@ -11,32 +11,17 @@ Number.prototype.formatMoney = function(c, d, t) {
 };
 
 
-function add_departments(data){
-   var departments = data.split("\n");
-   $( "#departments" ).autocomplete({
-      source: departments
+function fill_autocomplete(list){
+  $.get('https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/' + list + '.csv.gz', function(data) {
+   var values = data.split("\n");
+   $( "#" + list ).autocomplete({
+      source: values
     });
+  }, 'text');
 }
 
-function add_positions(data){
-   var positions = data.split("\n");
-   $( "#positions" ).autocomplete({
-      source: positions
-    });
-}
-
-$.get('https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/departments.csv.gz', function(data) {
-   console.log("adding departments");
-   add_departments(data)
-   console.log("added departments");
-}, 'text');
-
-$.get('https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/orgs.csv.gz', function(data) {
-   console.log("adding positions");
-   add_positions(data);
-   console.log("added positions");
-}, 'text');
-
+fill_autocomplete("organizations");
+fill_autocomplete("positions");
 
 var PAGE_LENGTH = 20; //20 results per page
 var page = 1;
@@ -48,11 +33,8 @@ function process_request(request){
 
     var output = window.data; //start by assuming all values can be returned, then filter down
 
-    if (request['department']!="" && request['department']!="ALL" && request['department']!="FIRE: ALL" && request['department']!="POLICE: ALL"){
-        output = _.filter(output, function(item){ return item['department'] == request['department']; });
-    } else if (request['department']=="FIRE: ALL" || request['department']=="POLICE: ALL") { //to return all police or all fire
-        var temp_department = request['department'].replace(': ALL','');  //replace :ALL
-        output = _.filter(output, function(item){ return item['department'].indexOf(temp_department.toUpperCase()) != -1; });   
+    if (request['organization']!=""){
+        output = _.filter(output, function(item){ return item['organization'] == request['organization']; });
     }
 
     if (request['job']!="" && request['job']!="ALL"){
@@ -113,9 +95,9 @@ function get_rows(results, page){
 
 function loadTable() {
     $("#results_status").html('');
-    var name = encodeURIComponent($('#input_box').val());
+    var name = $('#input_box').val();
     var data = {};
-    data['department'] = $('#departments').val();
+    data['organization'] = $('#organizations').val();
     data['job'] = $('#positions').val();
     data['name'] = name;
     data['page'] = 1;
