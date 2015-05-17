@@ -2,4 +2,7 @@
 csvcut -c 1,2,5,8,9 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 11-7-2014.csv > essentials.csv #pull out columns you need 
 csvcut -c 1 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 11-7-2014.csv > organizations.csv
 csvcut -c 2 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 11-7-2014.csv > departments.csv
-
+gzip departments.csv
+gzip organizations.csv
+aws s3 cp departments.csv.gz s3://lensnola/salaryexplorer/data/departments.csv.gz
+aws s3 cp organizations.csv.gz s3://lensnola/salaryexplorer/data/organizations.csv.gz
