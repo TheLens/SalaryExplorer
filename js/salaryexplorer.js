@@ -73,7 +73,7 @@ function get_row(item, id){
 
 
 function reformat(id) {
-    var newval = "$" + (Number($(id).html()).formatMoney(2, '.', ','));
+    var newval = "$" + Number($(id).html().replace(",","")).formatMoney(2, '.', ',');
     $(id).html(newval);
 }
 
