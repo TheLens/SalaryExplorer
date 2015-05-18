@@ -15,25 +15,23 @@
 
 <div class="row">
   <div class="small-12 medium-12 columns">
-    <div class="small-12 columns">
-      <input id="input_box" type="text" name="namesearch" placeholder="Search by last name or title">
-    </div>
-    <div class="row">
-      <div class="small-12 medium-12 columns" id="search-examples">Example: Jindal or warden</div>
+    <div class="ui-widget">
+      <label for="tags">Name or title (Example: Jindal or warden)</label>
+      <input id="input_box" type="text" name="namesearch">
     </div>
 
     <div class="ui-widget">
       <label for="tags">Organization (Example: UNIVERSITY OF LA-LAFAYETTE): </label>
-      <input id="organizations" class = "large-12 medium-12 small-12 columns">
+      <input id="organizations"  type="text"  class = "large-12 medium-12 small-12 columns">
     </div>
 
     <div class="ui-widget">
       <label>Position (Example: Police Officer 1)</label>
-      <input id="positions" class = "large-12 medium-12 small-12 columns">
+      <input id="positions" type="text"   class = "large-12 medium-12 small-12 columns">
     </div>
 
     <div class="large-2 medium-3 small-12 columns">
-      <button id="search_button" class="button postfix searchButton">Search</button>
+      <button id="search_button"  type="text"  class="button postfix searchButton">Search</button>
     </div>
 
   </div>
@@ -46,21 +44,6 @@
 </div>
 
 <div id="results" class="row">
-  <table id="myTable" class="tablesorter">
-  <thead id="thead">
-    <tr>
-      <th width="20%">Name</th>
-      <th width="20%">Organization</th>
-      <th width="20%">Position</th>
-      <th width="20%">Salary</th>
-    </tr>
-  </thead>
-  <div id="tbody_div">
-  <tbody id="tbody">
-    
-  </tbody>
-  </div>
-  </table>
 </div>
 
 <script>

@@ -92,8 +92,19 @@ function get_rows(results, page){
     return output;
 }
 
+function add_table(){
+  var table = '<table id="myTable" class="tablesorter"><thead id="thead"><tr>' +
+      '<th width="20%">Name</th><th width="20%">Organization</th>' +
+      '<th width="20%">Position</th><th width="20%">Salary</th></tr></thead>' +
+      '<div id="tbody_div"><tbody id="tbody"></tbody></div></table>';
+  return table
+}
 
 function loadTable() {
+    if ($( "#myTable" ).length == 0){
+      var table = add_table();
+      $("#results").append(table);
+    }
     $("#results_status").html('');
     var name = $('#input_box').val();
     var data = {};
