@@ -26,7 +26,6 @@ fill_autocomplete("positions");
 var PAGE_LENGTH = 20; //20 results per page
 var page = 1;
 
-
 function process_request(request){
 
     var result = {}, key;
@@ -56,12 +55,12 @@ function get_row(item, id){
     if (typeof item == 'undefined') {
         return ""; //row is blank. can't "render" row
     }
+    item['id'] = id;
     if ($(window).width() > 500) {
-          return '<tr data-total="16" data-page="0">\
-          <td class="first">' + item['name'].toUpperCase() + '</td>\
-          <td class="department">' + item['organization'].toUpperCase() + '</td>\
-          <td class="title">'+ item['job'].toUpperCase() +'</td>\
-          <td id="'+ id + '" class="salary">'+ item['rate'].toUpperCase() +'</td></tr>';
+         var source   = $("#entry-template").html();
+         var template = Handlebars.compile(source);
+         var html = template(item);
+         return html;
     } else {
           $("#thead").remove(); // not in table mode
           return '<div class="tablerow">\
