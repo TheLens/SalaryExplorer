@@ -216,7 +216,7 @@ function process(data){
 
 $.ajax({
   type: "GET",
-  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/gss_tabs.csv.gz",
+  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/all.csv.gz",
   dataType: "text",
   success: function(data) {process(data)}
 });

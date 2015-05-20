@@ -1,4 +1,5 @@
 fabfile.py
 app.cfg
 *pyc
+*gz
 classes/classes.pyc

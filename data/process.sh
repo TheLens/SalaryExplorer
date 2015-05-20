@@ -1,8 +1,20 @@
 #This script gets static files for the app ready from the master list (starting from data from state civil service)
-csvcut -c 1,2,5,8,9 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 11-7-2014.csv > essentials.csv #pull out columns you need 
-csvcut -c 1 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 11-7-2014.csv > organizations.csv
-csvcut -c 2 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 11-7-2014.csv > departments.csv
+csvcut -c 1,2,5,8,9 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv > all.csv #pull out columns you need 
+csvcut -c 1 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv | sort | uniq > organizations.csv
+csvcut -c 2 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv | sort | uniq > departments.csv
+csvcut -c 8 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv | sort | uniq > positions.csv
+
+rm organizations.csv.gz
+rm departments.csv.gz
+rm positions.csv.gz
+rm all.csv.gz
+
+gzip all.csv
+gzip positions.csv
 gzip departments.csv
 gzip organizations.csv
-aws s3 cp departments.csv.gz s3://lensnola/salaryexplorer/data/departments.csv.gz
-aws s3 cp organizations.csv.gz s3://lensnola/salaryexplorer/data/organizations.csv.gz
+
+aws s3 cp positions.csv.gz s3://lensnola/salaryexplorer/data/all.csv.gz --acl public-read --content-type plain/text --content-encoding gzip
+aws s3 cp positions.csv.gz s3://lensnola/salaryexplorer/data/positions.csv.gz --acl public-read --content-type plain/text --content-encoding gzip
+aws s3 cp departments.csv.gz s3://lensnola/salaryexplorer/data/departments.csv.gz --acl public-read --content-type plain/text --content-encoding gzip
+aws s3 cp organizations.csv.gz s3://lensnola/salaryexplorer/data/organizations.csv.gz --acl public-read --content-type plain/text --content-encoding gzip
