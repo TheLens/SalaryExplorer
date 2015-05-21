@@ -26,6 +26,10 @@
 	}
 }
 
+#myTable{
+	display: none;
+}
+
 @media (max-width: 700px) {
 	.row {
 		margin-left: 0px !important;
