@@ -202,9 +202,9 @@ function process(data){
     var item = {};
     item['organization'] = items[0];
     item['unit'] = items[1]
-    item['name'] = items[3]
-    item['job'] = items[6]
-    item['rate'] = items[7]
+    item['name'] = items[2]
+    item['job'] = items[3]
+    item['rate'] = items[4]
     if (!_.isUndefined(item['name'])){
       output.push(item);
     }
@@ -215,7 +215,7 @@ function process(data){
 
 $.ajax({
   type: "GET",
-  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/all.csv.gz",
+  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/all.tsv.gz",
   dataType: "text",
   success: function(data) {process(data)}
 });
