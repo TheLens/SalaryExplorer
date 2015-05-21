@@ -26,6 +26,24 @@
 	}
 }
 
+#myTable{
+	display: none;
+}
+
+span.first.left {
+  font-weight: bold;
+}
+
+span.salary{
+  color: darkslategrey;
+}
+
+.tablerow {
+  padding: 15px;
+  border-bottom: 1px solid gray;
+}
+
+
 @media (max-width: 700px) {
 	.row {
 		margin-left: 0px !important;

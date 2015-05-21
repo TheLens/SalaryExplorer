@@ -2,4 +2,6 @@ fabfile.py
 app.cfg
 *pyc
 *gz
+*csv
+*tsv
 classes/classes.pyc

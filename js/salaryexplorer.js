@@ -56,18 +56,19 @@ function get_row(item, id){
         return ""; //row is blank. can't "render" row
     }
     item['id'] = id;
+    var source;
     if ($(window).width() > 500) {
-         var source   = $("#entry-template").html();
-         var template = Handlebars.compile(source);
-         var html = template(item);
-         return html;
+        source = $("#big-template").html();
     } else {
-          $("#thead").remove(); // not in table mode
-          return '<div class="tablerow">\
-           <div class="namerow"><span class="first">' + item['name'].toUpperCase() + '</span> </div>\
-           <div class="detailsrow"><span class="department">' + item['organization'].toUpperCase() + ' | </span><span class="title">'+ item['job'].toUpperCase() +'</span></div>\
-           <div><span id="'+ id + '" class="salary">'+ item['rate'].toUpperCase() +'</span></div></div>';
+        source = $("#little-template").html();
+        $("#thead").remove(); // not in table mode
+        $("#myTable").show();
     }
+    if (typeof source !== 'undefined') {
+      var template = Handlebars.compile(source);
+      var html = template(item);
+    }
+    return html;
 }
 
 
@@ -91,18 +92,9 @@ function get_rows(results, page){
     return output;
 }
 
-function add_table(){
-  var table = '<table id="myTable" class="tablesorter"><thead id="thead"><tr>' +
-      '<th width="20%">Name</th><th width="20%">Organization</th>' +
-      '<th width="20%">Position</th><th width="20%">Salary</th></tr></thead>' +
-      '<div id="tbody_div"><tbody id="tbody"></tbody></div></table>';
-  return table
-}
-
 function loadTable() {
-    if ($( "#myTable" ).length == 0){
-      var table = add_table();
-      $("#results").append(table);
+    if ($("#myTable tr").length > 1){
+      $("#myTable").show();
     }
     $("#results_status").html('');
     var name = $('#input_box').val();
@@ -202,9 +194,9 @@ function process(data){
     var item = {};
     item['organization'] = items[0];
     item['unit'] = items[1]
-    item['name'] = items[3]
-    item['job'] = items[6]
-    item['rate'] = items[7]
+    item['name'] = items[2]
+    item['job'] = items[3]
+    item['rate'] = items[4]
     if (!_.isUndefined(item['name'])){
       output.push(item);
     }
@@ -215,7 +207,7 @@ function process(data){
 
 $.ajax({
   type: "GET",
-  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/all.csv.gz",
+  url: "https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/data/all.tsv.gz",
   dataType: "text",
   success: function(data) {process(data)}
 });
