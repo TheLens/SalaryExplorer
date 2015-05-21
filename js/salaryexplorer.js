@@ -64,8 +64,10 @@ function get_row(item, id){
         $("#thead").remove(); // not in table mode
         $("#myTable").show();
     }
-    var template = Handlebars.compile(source);
-    var html = template(item);
+    if (typeof source !== 'undefined') {
+      var template = Handlebars.compile(source);
+      var html = template(item);
+    }
     return html;
 }
 
