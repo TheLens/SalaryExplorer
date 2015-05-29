@@ -1,8 +1,14 @@
 #This script gets static files for the app ready from the master list (starting from data from state civil service)
-csvcut -c 1,2,5,8,9 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv > all.csv #pull out columns you need 
-csvcut -c 1 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv | sort | uniq > organizations.csv
-csvcut -c 2 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv | sort | uniq > departments.csv
-csvcut -c 8 La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv | sort | uniq > positions.csv
+
+# First you pull out WAE and Per Diem employees
+cat La\ State\ Employee\ Listing\ -\ Data\ as\ of\ 5-15-2015.csv | grep -v ',WAE,' | grep -v ',Per Diem,' > temp.csv
+
+# Then you pull out the columns that you need 
+csvcut -c 1,2,5,8,9 temp.csv > all.csv
+
+csvcut -c 1 temp.csv | sort | uniq > organizations.csv
+csvcut -c 2 temp.csv | sort | uniq > departments.csv
+csvcut -c 8 temp.csv | sort | uniq > positions.csv
 
 python tsvprocessor.py
 
