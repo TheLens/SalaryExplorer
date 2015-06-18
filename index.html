@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript">
+      console.log(Date());
+    </script>
     <title>Louisiana state employee salaries</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +13,14 @@
 
     <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/lensnola/images/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="css/explorer.css">
+    <script type="text/javascript" src="//use.typekit.net/oct0mkd.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" type="text/css" href="css/lens.css">
+    <link rel="stylesheet" type="text/css" href="css/state-salaries.css">
   </head>
   <body>
 
@@ -38,79 +46,103 @@
       </div>
     </script>
 
-    <div id="test"></div>
-
     <div class="row">
-      <div class="small-12 medium-12 columns">
-        <div class="ui-widget">
-          <label for="tags">Name (Example: Miles,Les or Jindal)</label>
-          <input id="input_box" type="text" name="namesearch">
-        </div>
-
-        <div class="ui-widget">
-          <label for="tags">Organization (Example: UNIVERSITY OF LA-LAFAYETTE): </label>
-          <input id="organizations"  type="text"  class = "large-12 medium-12 small-12 columns">
-        </div>
-
-        <div class="ui-widget">
-          <label>Position (Example: POLICE OFFICER 1)</label>
-          <input id="positions" type="text"   class = "large-12 medium-12 small-12 columns">
-        </div>
-
-        <div class="large-2 medium-3 small-12 columns">
-          <button id="search_button"  type="text"  class="button postfix searchButton">Search</button>
-        </div>
-
+      <div class="small-12 input-div columns" id="input-div">
+        <label>Search employees</label>
+        <input class="small-12 name-address-box columns" id="employees" type="search" placeholder="Les Miles, Piyush Jindal">
       </div>
     </div>
 
-    <div id="loading_gif_row" class="row">
+    <div class="row">
+      <div class="small-12 input-div columns" id="input-div">
+        <label>Search organizations</label>
+        <input class="small-12 name-address-box columns" id="organizations" type="search" placeholder="University of LA-Lafayette">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 input-div columns" id="input-div">
+        <label>Search positions</label>
+        <input class="small-12 name-address-box columns" id="positions" type="search" placeholder="Police officer 1">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 small-centered text-center ui-components columns" id="ui-components">
+        <button class="small button search-button" id="search-button">Search</button>
+      </div>
+    </div>
+
+    <!-- <div id="loading_gif_row" class="row">
         <div id="gif_holder" class="small-12 medium-12 large-12 columns centered">
             <img id="loading_gif" src='https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/images/ajax-loader.gif'</img>
         </div>
-    </div>
+    </div> -->
 
-    <div id="results" class="row">
-      <table id="myTable" class="tablesorter">
-        <thead id="thead">
-          <tr>
-            <th width="20%">Name</th>
-            <th width="20%">Organization</th>
-            <th width="20%">Position</th>
-            <th width="20%">Salary</th>
-          </tr>
-        </thead>
-        <div id="tbody_div"><tbody id="tbody"></tbody></div>
-      </table>
-    </div>
-
-    <div id="panel" class="row">
-      <div class="panel">
-        <div class="footnote">
-          Source: Louisiana State Civil Service. Information current as of May 15, 2015.
-        </div>
-        <br>
-        <div class="footnote">
-          Note: Some employees work for the state on a per diem basis. Others work only very occassionally under a status that the state calls "WAE". We exclude these employees from our database. 
-        </div>
-        <br>
-        <div class="footnote">
-          What does the "salary" mean? The salary listed (on the spreadsheet) reflects the annual rate of pay for a state employee, as reported to state civil service. In some circumstances, an employee's actual compensation might differ from their rate of pay. For instance, Les Miles, the head football coach of LSU, earns additional money for media appearances -- which is not reflected in his annual rate of pay. Similarly, if an employee takes unpaid leave their actual annual salary might fall below their annual rate of pay.
+    <div class="row">
+      <div class="small-12 medium-4 columns results-status" id="results-status"></div>
+      <div class="small-6 medium-4 medium-text-center medium-center columns number-of-pages" id="number-of-pages"></div>
+      <div class="small-6 medium-4 text-right right columns pager" id="pager">
+        <div class="nextprev" id="nextprev">
+          <a class="previous" id="previous">Previous</a> | <a class="next" id="next">Next</a>
         </div>
       </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <div class="row">
+      <div class="small-12 columns">
+        <table id="table" class="tablesorter">
+          <thead id="thead">
+            <tr>
+              <th width="20%">First</th>
+              <th width="20%">Last</th>
+              <th width="20%">Organization</th>
+              <th width="20%">Position</th>
+              <th width="20%">Salary</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-4 columns">&nbsp;</div>
+      <div class="small-4 medium-text-center medium-center columns number-of-pages" id="number-of-pages"></div>
+      <div class="small-4 text-right right columns pager" id="pager">
+        <div class="nextprev" id="nextprev">
+          <a class="previous" id="previous">Previous</a> | <a class="next" id="next">Next</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="panel">
+          <p>
+            Source: Louisiana State Civil Service. Information current as of May 15, 2015.
+          </p>
+          <p>
+            Note: Some employees work for the state on a per diem basis. Others work only very occassionally under a status that the state calls "WAE". We exclude these employees from our database. 
+          </p>
+          <p>
+            What does the "salary" mean? The salary listed (on the spreadsheet) reflects the annual rate of pay for a state employee, as reported to state civil service. In some circumstances, an employee's actual compensation might differ from their rate of pay. For instance, Les Miles, the head football coach of LSU, earns additional money for media appearances -- which is not reflected in his annual rate of pay. Similarly, if an employee takes unpaid leave their actual annual salary might fall below their annual rate of pay.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/lensnola/salaryexplorer/js/handlebars-v3.0.3.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src='https://s3-us-west-2.amazonaws.com/lensnola/external-libraries/js/jquery.tablesorter.min.js'></script>
     <script>
-      Foundation.global.namespace = '';
       $(document).foundation();
     </script>
-    <script type="text/javascript" src='js/salaryexplorer.js'></script>
 
+    <script type="text/javascript" src='js/state-salaries.js'></script>
   </body>
 </html>

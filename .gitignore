@@ -1,7 +1,4 @@
-fabfile.py
-app.cfg
-*pyc
-*gz
-*csv
+*.cfg
+*.pyc
+*.gz
 *tsv
-classes/classes.pyc

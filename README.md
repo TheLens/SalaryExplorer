@@ -1,3 +1,3 @@
-Requires csvkit 0.9.1+ 
+# Louisiana government employee salaries
 
-Requires a properly configured aws cli
+[![Build Status](https://travis-ci.org/TheLens/StateSalaries.svg)](https://travis-ci.org/TheLens/StateSalaries)
