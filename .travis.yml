@@ -19,4 +19,4 @@ deploy:
   acl: public_read
   on:
     repo: TheLens/StateSalaries
-    branch: development
+    branch: master
