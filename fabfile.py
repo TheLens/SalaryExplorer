@@ -48,8 +48,8 @@ def addthemall():
 
 
 def push():
-    local('git push origin development')
+    local('git push origin master')
 
 
 def pull():
-    local('git pull origin development')
+    local('git pull origin master')
