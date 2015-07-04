@@ -6,14 +6,23 @@ script:
 - rm README.md
 - rm fabfile.py
 before_deploy:
+# - rm -rf scripts
+# - rm -rf citysalaries/__init__.py
+# - rm -rf citysalaries/app.py
+# - rm -rf citysalaries/lib
+# - rm -rf citysalaries/templates
+# - mv citysalaries/static/* . # Move to /neworleans/
 - gzip -9 data/export/data.csv
+# - mv data/export/data.csv.gz data/export/data.csv
 deploy:
   provider: s3
   access_key_id: AKIAIWQKYAETOQ2N7CBQ
   secret_access_key:
     secure: mQzm9qfEXWajnhQw+uWKZopl9qrF0xplwqMMcjcR06DZ70ohbdWoFY/jZ9AULDzPATEeOtxkkVbG1Qr8zQrvGdoJeEWk0KCWe7TxCXBsdU08jKKtJhFDFpiVEwZL9norcHkxQKEZO6IVl/cX9LWuPtINs7sqiCVidt9PlQk+/7o=
-  bucket: lensnola
-  upload-dir: state-salaries
+  bucket: salaries.thelensnola.org
+  endpoint: salaries.thelensnola.org.s3-website-us-west-2.amazonaws.com
+  region: us-west-2
+  upload-dir: louisiana
   detect_encoding: true
   skip_cleanup: true
   acl: public_read
