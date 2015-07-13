@@ -1,0 +1,2024 @@
+Acad Aff Staff Adm
+Academic Affairs Of
+Account Clerk
+Accountant
+Accountant 1
+Accountant 2
+Accountant 3
+Accountant 4
+Accountant Admin 1
+Accountant Admin 2
+Accountant Admin 3
+Accountant Admin 4
+Accountant Admin 5
+Accountant Manager 1
+Accountant Manager 2
+Accountant Manager 3
+Accountant Manager 4
+Accountant Supervisor 1
+Accountant Supervisor 2
+Accounting Spec Supv
+Accounting Specialist 1
+Accounting Specialist 2
+Accounting Tech
+Accounts Rec Tech
+Acct Serv Rep
+Actuary
+Adaptive Equipment Spec 1
+Adaptive Equipment Spec 2
+Adjunct Faculty
+Adjutant General
+Adm Assistant
+Adm Health Ser Physician
+Adm Law Judge
+Adm Law Judge--Adv
+Adm Law Judge--Entry
+Adm Secretary
+Adm Technician
+Admin Asst 1
+Admin Asst 2
+Admin Asst 3
+Admin Asst 4
+Admin Asst 5
+Admin Asst 6
+Admin Coord 1
+Admin Coord 2
+Admin Coord 3
+Admin Coord 4
+Admin Dept Director
+Admin Prog Dir 1
+Admin Prog Dir 2
+Admin Prog Dir 3
+Admin Prog Dir 4
+Admin Prog Mgr 1
+Admin Prog Mgr 2
+Admin Prog Mgr 3
+Admin Prog Mgr 4
+Admin Prog Spec A
+Admin Prog Spec B
+Admin Prog Spec C
+Admin Staff Officer
+Admin Supv 1
+Admin Supv 2
+Administrative Aide
+Administrator
+Admissions Director
+Adult Prot Spec 1
+Adult Prot Spec 2
+Adult Prot Spec 3
+Adult Prot Spec Supv
+Advanced Instructor
+Advisor
+Agri Asst Div Dir
+Agri Envir Spec Adm Coor
+Agri Environ Spec 1
+Agri Environ Spec 2
+Agri Environ Spec Mgr
+Agri Environ Spec Supv
+Agri Meat Prog Coord
+Agri Prog Spec 1
+Agri Prog Spec 2
+Agri Spec 1
+Agri Spec 2
+Agri Spec 3
+Agri Spec Dist Supv
+Agri Spec Prog Mgr
+Agri Spec Reg Enforce Sup
+Agri/For Enf Prog Dir
+Agri/Forest Enforce Mgr 1
+Agri/Forest Enforce Off 1
+Agri/Forest Enforce Off 2
+Agri/Forest Enforce Supv
+Agri/Forest Reg Admin
+Agric Envir Spec 3
+Aid Officer
+Aircraft Fleet Chf Pilot
+Aircraft Fleet Comd Pilot
+Aircraft Mech 2
+Aircraft Mech Supv
+Aircraft Pilot 2
+Aircraft Services Directo
+Airport Director
+Airport Fuel Term Mgr
+Airport Mgr
+Alco Tobac Cont Prosecute
+Alumni Director
+Analyst
+Anesthetist
+Arborist
+Archaeologist 1
+Archaeologist 2
+Archaeologist Manager
+Architect
+Architect 1
+Architect 3
+Architect 4
+Architect 6
+Architectural Dir/Preserv
+Architectural Hist Mgr
+Architectural Historian 1
+Architectural Historian 2
+Archives Spec B
+Archives Spec C
+Archives Supv
+Archivist
+Assistant
+Assistant Chief
+Assistant Coach
+Assistant Dean
+Assistant Head Librarian
+Assistant Professor
+Assistant To Chancellor
+Assistant To Dean
+Assistant Trainer
+Assoc State Librarian
+Associate 1/Psychol
+Associate 2/Psychol
+Associate 3/Psychol
+Associate 4/Psychol
+Associate Commissioner
+Associate Dean
+Associate Director
+Associate Exec Dir
+Associate Manager
+Associate Professor
+Asst Administrator
+Asst Athletic Director
+Asst Attorney Gen
+Asst Commissioner
+Asst Comptroller
+Asst Coordinator
+Asst Counsel
+Asst Counselor
+Asst County Agent
+Asst Dept Director
+Asst Dir Purchasing
+Asst Director
+Asst Dpy Reg Voters
+Asst Exec Director
+Asst Head Coach
+Asst Instructor
+Asst Librarian
+Asst Manager
+Asst Public Administrator
+Asst Secretary
+Asst Superintendent
+Asst To Chief Clerk
+Asst To Comptroller
+Asst To Director
+Asst To President
+Asst To Register
+Asst To Secretary
+Asst To Treasurer
+Asst Vice-President
+Asst/Psychol
+Ast Sect To Sect Of State
+Atc Agent 2
+Atc Agent 3
+Atc Agent 4
+Atc Agent 5
+Atc Enforce Analyst 1
+Atc Specialist
+Ath Publicity Dir
+Athletic Director
+Athletic Trainer
+Attendant
+Attorney
+Attorney 1
+Attorney 2
+Attorney 3
+Attorney 4
+Attorney General
+Attorney Supervisor
+Attorney--Regional
+Attorney-Dep Gen Couns 1
+Attorney-Dep Gen Couns 2
+Attorney-Gen Couns 1
+Attorney-Gen Couns 2
+Attorney-Gen Couns 3
+Audio Visual Product Mgr
+Audiologist
+Audit Dir 1
+Audit Dir 2
+Audit Director 3
+Audit Manager
+Auditor
+Auditor 1
+Auditor 2
+Auditor 3
+Auditor 4
+Auditor Supervisor
+Auditor--Inf Sys 1
+Auditor--Inf Sys 2
+Auditor--Inf Sys 3
+Auditor--Inf Sys 4
+Auditor--Int
+Auto Mechanic
+Auxiliary Manager
+Bad Code
+Band Director
+Barber Shop Inspector
+Barber Supervisor
+Beautician 2
+Behavior Shaping Spec
+Biologist 1
+Biologist 2
+Biologist 3
+Biologist Administrator
+Biologist Dcl-A
+Biologist Dcl-B
+Biologist Director
+Biologist Manager
+Biologist Program Manager
+Biologist Supervisor
+Bldg Plans Examiner 2
+Bldg Plans Examiner 3
+Blind Svcs Exec Dir
+Bookkeeper
+Breath Anal Inst Spec
+Bricklayer
+Bridge Operator 1
+Bridge Operator 2
+Bridge Toll Coll Oper Mgr
+Bridge Toll Collector
+Budget Admin 1
+Budget Admin 2
+Budget Admin 3
+Budget Analyst
+Budget Analyst 1
+Budget Analyst 2
+Budget Analyst 3
+Budget Analyst 4
+Budget Manager
+Budget Officer
+Bulk Terminal Foreman
+Bulk Terminal Mast Mech
+Bulk Terminal Mgr
+Bulk Terminal Spec 1
+Bulk Terminal Spec 2
+Bulk Terminal Spec 3
+Bursar
+Bus Driver
+Bus Driver/Travel Aide
+Business & Fiscal St Mem
+Business Dev Mgr
+Business Dev Officer 1
+Business Dev Officer 2
+Business Dev Officer 3
+Business Manager
+Buyer
+Cafeteria Manager
+Campus Security Director
+Caretaker
+Carpenter
+Carpenter Foreman
+Carpenter Master
+Cashier
+Caterer
+Central Service Supv
+Central Service Worker 1
+Central Service Worker 2
+Chairman
+Chancellor
+Chief Camp Security
+Chief Executive Officer
+Chief Fiscal Off
+Chief Investment Officer
+Chief Of Staff
+Chief Operating Officer
+Child Dev Cons
+Child Dev Supv
+Child Supp Enf Cons
+Child Supp Enf Dir
+Child Supp Enf Mgr 1
+Child Supp Enf Mgr 2
+Child Supp Enf Mgr 3
+Child Supp Enf Spec
+Child Supp Enf Supv
+Child Welfare Consult
+Child Welfare Direct
+Child Welfare Mgr 1
+Child Welfare Mgr 2
+Child Welfare Spec 1
+Child Welfare Spec 2
+Child Welfare Spec 3
+Child Welfare Spec Tr
+Child Welfare Supp Spec
+Child Welfare Supv
+Child Welfare Svcs Asst
+Clerk
+Clinical Chaplain 2
+Clinical Chaplain 3
+Clinical Chaplain 4
+Clinical Director
+Coach
+Coast Res Admin
+Coast Res Asst Admin
+Coast Res Sc Stf Dcl A
+Coast Res Sci 4
+Coast Res Scientist 1
+Coast Res Scientist 2
+Coast Res Scientist 3
+Coast Res Scientist Mgr
+Coast Res Scientist Supv
+Coastal Res Prog Mgr
+Coastal Res Prog Sp 1
+Coastal Res Prog Sp 2
+Coastal Res Prog Sp 3
+Coastal Res Prog Supv
+Coastal Res Scien Sr Dclb
+Collector Revenue
+College Dean
+Comm Administration
+Comm Agriculture
+Comm Conservation
+Comm Dev Financial Mgr
+Comm Dev Prog Spec 3
+Comm Driver'S Lic Cons
+Comm Elections
+Comm Insurance
+Comm Serv Man
+Comm Serv Prof 1
+Comm Serv Prof 2
+Comm Serv Prof 3
+Comm Serv Sup
+Commercial Administrator
+Commercial Asst Admin
+Commercial Mgr
+Commercial Specialist B
+Commercial Specialist C
+Commercial Supervisor
+Commerical Specialist A
+Commissioner-Bd Or Comm
+Commun Dev Asst Dir
+Commun Dev Director
+Commun Dev Finan Anyl 2
+Commun Dev Pol/Prog Coord
+Commun Dev Prog Mgr
+Communications Off
+Communications Off 1
+Communications Off 2
+Communications Off Supv
+Communications Officer 3
+Comp Inv 4-A
+Comp Invest 4-B
+Compl Exam Chief
+Compl Exam Dep Chief
+Compliance Exam 1
+Compliance Exam 2
+Compliance Exam 3
+Compliance Exam 4
+Compliance Exam Asst Mgr
+Compliance Exam Mgr
+Compliance Exam-Reviewer
+Compliance Inspector 2
+Compliance Investigator 1
+Compliance Investigator 2
+Compliance Investigator 3
+Compliance Investigator 5
+Compliance Officer
+Compliance Prog Dir
+Compliance Prog Spec 2
+Compliance Prog Spec 4
+Comptroller
+Computer Analyst
+Computer Graph Design
+Computer Graph Design Adv
+Computer Graph Design Mgr
+Computer Programmer
+Concrete Finisher
+Concrete Finisher Master
+Confidential Asst
+Cons Enf Spec 1
+Cons Enf Spec 2
+Cons Enf Spec 3
+Cons Prog Mgr
+Consultant
+Cont Crane Master Tech
+Container Crane Supv
+Container Crane Tech 1
+Container Crane Tech 2
+Contr/Gnts Rev 1
+Contr/Gnts Rev 2
+Contr/Gnts Rev 3
+Contr/Gnts Rev 4
+Contr/Gnts Rev Mgr
+Contr/Gnts Rev Supv
+Contract Officer
+Cook
+Cooperating Teacher
+Coordinator
+Corr Ardc Specialist 1
+Corr Ardc Specialist 2
+Corr Ardc Supv
+Corr Asst Wdn 4
+Corr Deputy Warden 2
+Corr Deputy Warden 3
+Corr Deputy Warden 4
+Corr Deputy Warden 5
+Corr Sgt--Mstr
+Corr Warden 2
+Corr Warden 3
+Corr Warden 4
+Corr Warden 5
+Corrections Food Mgr
+Corrs Ardc Manager
+Corrs Ardc Spec 3
+Corrs Asst Warden 1
+Corrs Asst Warden 2
+Corrs Asst Warden 3
+Corrs Cadet
+Corrs Captain
+Corrs Captain/Therapeutic
+Corrs Chief/Therapeutic
+Corrs Colonel
+Corrs Food Manager 1
+Corrs Food Manager 3
+Corrs Food Manager 4
+Corrs Food Prod Sup 1
+Corrs Food Serv Director
+Corrs Guard Trn/Therap
+Corrs Guard/Therap
+Corrs Juv Food Prod Supv
+Corrs Juv Food Prod Wrkr
+Corrs Lieutenant/Therap
+Corrs Lt
+Corrs Lt Col
+Corrs Major
+Corrs Major/Therapeutic
+Corrs Prog Mgr 1
+Corrs Prog Mgr 2
+Corrs Prog Mgr 3
+Corrs Sgt
+Corrs Transition Spec
+Cosmetology Inspector
+Counselor
+County Agent
+Crim Invest 1
+Crim Invest 2
+Crim Invest 3
+Crim Invest 4
+Crim Jus Asst Dir
+Crim Jus Pol Advisor
+Crim Jus Policy Planner 1
+Crim Jus Policy Planner 2
+Crim Jus Policy Planner 3
+Crim Jus Policy Planner 4
+Crim Rec Anyl 2
+Crim Rec Anyl 3
+Crim Rec Anyl 4
+Crim Rec Anyl 5
+Crime Lab Alyst 1
+Crime Lab Alyst 2
+Crime Lab Alyst 3
+Crime Lab Alyst 4
+Crime Lab Anyl Supv
+Crime Lab Mgr
+Crime Lab Techn 2
+Criminal Records Auditor
+Cs Deputy Director
+Cs Dir
+Cs Ethics Admin
+Cultural Prog Anal 2
+Cultural Program Coord
+Curator
+Curator 1
+Curator 2
+Curator 3
+Custodial Worker
+Custodian 1
+Custodian 2
+Custodian Manager
+Custodian Supervisor 1
+Custodian Supervisor 2
+Custodian Supervisor 3
+Data Control Tech
+Data Entry Operator
+Data Proc Staff Mem
+Dcfs Area Dir
+Dcfs Reg Admin
+Dean
+Dean Of Academic Affairs
+Dean Of Students
+Dental Assistant 2
+Dental Assistant Supv
+Dental Hygienist Cln Coor
+Dental Program Coor
+Dental Services Coord
+Dentist
+Dep Commissioner
+Dep Reg Of Voters
+Dep State Librarian
+Dep Supt For Op Plan & Tr
+Dep Supt For Patrol
+Department Head
+Deputy
+Deputy Assistant
+Deputy Asst Secretary 1
+Deputy Asst Secretary 2
+Deputy Asst Secretary 3
+Deputy Chf Of Staff
+Deputy Chief
+Deputy Commiss/Securities
+Deputy Director
+Deputy Exec Dir
+Deputy Secretary
+Deputy Undersecretary 1
+Deputy Undersecretary 2
+Deputy Undersecretary 3
+Developer
+Developmentalist
+Dietitian
+Dietitian Manager 2
+Dir Bus & Fiscal Affairs
+Dir Data Processing
+Dir Emer Services
+Dir Gen Inst Div
+Dir Infor Services
+Dir Inst Research
+Dir Instr Resea Div
+Dir Nursing Service
+Dir Of Medical Serv
+Dir Of Purchasing
+Dir Of Sports Information
+Dir Stud Ser Div
+Dir/Outdoor Recreation
+Director
+Director Academic Affair
+Director Personnel
+Director-Div Of Admin Law
+Disability Det Cons
+Disability Det Dir
+Disability Det Mgr 1
+Disability Det Mgr 2
+Disability Det Spec
+Disability Det Supv
+Disease Interv Spec 1
+Disease Interv Spec 2
+Disease Interv Spec 3
+Disease Interv Spec 4
+Disease Interv Spec 5
+District Sign Spec 1
+District Sign Spec 2
+Dotd Chief Engineer Adm
+Dotd Dep Eng Admin
+Dotd Loc And Surv Adm
+Dotd Loc Survey Asst Adm
+Dotd Prog Dir
+Dotd Prog Man
+Dotd Prog Spec 1
+Dotd Prog Spec 2
+Dotd Prog Spec 3
+Dotd Prog Spec 4
+Dotd Prog Spec 5
+Dotd Prog Sup
+Dpy Superintendant
+Dpy Trea Mant & Fin
+Dredge Chief Engineer
+Dredge Deckhand
+Dredge Engineer
+Dredge Operator
+Dredge Operator Trainee
+Eco Dev Research Anal 2
+Econ Stability Cons
+Econ Stability Dir
+Econ Stability Mgr 1
+Econ Stability Mgr 2
+Econ Stability Mgr 3
+Econ Stability Spec
+Econ Stability Supv
+Economist 1
+Economist 2
+Economist 3
+Economist 4-A
+Economist 4-B
+Economist 5
+Economist 6
+Ed Coordinator
+Editor
+Edp Sys Analysts
+Educ Info Cons 2
+Educ Info Cons 3
+Educ Prog Cons 1
+Educ Prog Cons 2
+Educ Prog Cons 3
+Educ Prog Cons 4
+Educ Prog Cons 5-A
+Educ Prog Cons 5-B
+Educ Res Anal 1
+Educ Res Anal 3
+Educ Res Anal Mgr
+Educ Tech Cons
+Educ Tech Sr Cons
+Educ Tv Tech Mgr
+Educational Asst
+Educational Dir
+Eeo Officer
+Ekg Technician 2
+Elec Prog Spec C
+Elec Tech C
+Elect Tech A
+Elect Tech B
+Elect Tech Mgr
+Elect Tech Supv
+Election Prog Admin
+Election Prog Manager
+Election Prog Spec A
+Election Prog Spec B
+Election Prog Sup
+Electrician
+Electrician Foreman
+Electrician Master
+Electrician Spec Foreman
+Electrician Spec Leader
+Electrician Specialist
+Electronic Engineer
+Electronic Tech Supv
+Electronic Technician
+Electronic Technician Adv
+Electronic Technician Tr
+Elects Compl Off 1
+Elects Compl Off 4
+Employee Assistance Ofcr
+Eng 5
+Eng 5 / Dcl
+Eng 5 Dotd
+Eng 6
+Eng 6 / Dcl
+Eng 6 Dotd
+Eng 7 Dotd
+Eng 8 Dotd
+Eng 9 Dotd
+Eng Tech 1
+Eng Tech 2
+Eng Techn 3
+Eng Techn 4
+Engineer
+Engineer 3
+Engineer 4
+Engineer 7
+Engineer 8
+Engineer 9
+Engineer Intern 1
+Engineer Intern 2
+Engineer Intern Appl
+Engineering Spec
+Engineering Tech 5
+Engineering Tech 6
+Engineering Tech 7
+Engineering Tech Dcl
+Env Chemical Spec 2
+Env Chemical Spec 3
+Env Chemical Spec Adv
+Env Chemical Spec Staff
+Env Impact Mgr 1
+Env Impact Mgr 2
+Env Impact Spec 2
+Env Impact Spec 3
+Env Prog Analyst 2
+Env Prog Analyst 3
+Env Proj Coord
+Env Proj Spec 2
+Env Proj Spec 3
+Env Scient Mgr
+Env Scient Senior Dclb
+Env Scient Staff Dcla
+Env Scient Supv
+Env Scientist 1
+Env Scientist 2
+Env Scientist 3
+Envir Div Admin
+Envir Health Scient Coord
+Envir Health Scient Mgr
+Envir Health Scient Supv
+Environ Impact Spec Dcl
+Environmental/Saf Officer
+Equipment Inspector
+Equipment Operator
+Equipment Supt
+Examiner
+Exec Adm Asst
+Exec Asst Supervisor
+Exec Director
+Exec Mgmt Off 1
+Exec Mgmt Off 2
+Exec Mgmt Off 3
+Exec Secretary
+Exec Staff Member
+Exec Staff Officer
+Executive Administrator
+Executive Assist
+Executive Counsel
+Executive Officer
+Fac Asst Main Man A
+Fac Asst Main Man B
+Fac Asst Main Man C
+Fac Main Man A
+Fac Main Man B
+Fac Main Man C
+Fac Plan Cntl Mgr
+Fac Plan Cont Asst Dir
+Fac Plan Cont Chf
+Fac Plan/Cont Sr Mgr
+Facility Proj Plan 2
+Facility Proj Plan 3
+Facility Proj Plan 4
+Facility Proj Plan 5-A
+Facility Proj Plan 5-B
+Fed Energy Analyst Supv
+Fellow
+Field Agent
+Field Oper Super
+Fin Aid Officer
+Finance Director
+Finance Officer
+Financial Aid Director
+Fir/Pol State Examiner
+Fire/Pol Dep State Exam
+Fireman Advanced
+Fireman Supv
+Firetug Captain
+Firetug Chief Engineer
+Firetug Deck/Firefight Tr
+Firetug Deck/Firefighter
+Firetug Engineer 1
+Firetug Engineer 2
+Firetug Master
+First Asst To Treas
+Fiscal Analyst
+Fiscal Officer
+Food Distr Prog Adm
+Food Distr Prog Asst Adm
+Food Distr Program Mgr
+Food Svc Spec 1
+Food Svc Spec 2
+Food Svc Spec 3
+Food Svc Spec 4-A
+Food Svc Spec 4-B
+Food Svc Spec 5
+Food Svc Spec 6
+Food Svc Spec 7
+For Crew Spec Lead-Heavy
+Foreman
+Forensic Comm Svcs Dir
+Forest Branch Asst Chief
+Forest Branch Chief
+Forest Crew Spec 1
+Forest Crew Spec 2
+Forest Crew Spec Ldr
+Forest Crew Supv
+Forest Parish Asst
+Forest Parish Supervisor
+Forest Prog Dir
+Forest Prog Spec
+Forestor
+Fpc Manager/Dcl
+Fraud Detect Consult
+Fraud Detect Supv
+Fraud Invest 1
+Fraud Investigator 2
+Gen Inst Div St Mem
+Gen Services Off
+Gen Svc Asst Dir
+Gen Svcs Dir
+General Counsel
+Geologist 1
+Geologist 2
+Geologist 3
+Geologist Adm
+Geologist Asst Adm
+Geologist Supv
+Geologist--Dcl
+Governor Of State
+Grants Officer
+Group Leader
+Grp Ben Administrator
+Grp Ben Analyst 2
+Grp Ben Analyst 3
+Grp Ben Asst Manager
+Grp Ben Director
+Grp Ben Manager
+Guard
+Guard Supervisor
+Habilitation Director
+Habilitation Instr 1
+Habilitation Instr 2
+Habilitation Instr 3
+Habilitation Manager
+Head Coach
+Head Environ Safety
+Head Librarian
+Head Resident
+Health Educator
+Health Info Dir 1
+Health Info Dir 2
+Health Info Inpatient Cod
+Health Info Oupatient Cod
+Health Info Processor 1
+Health Info Processor 2
+Health Info Processor 3
+Health Info Processor Sup
+Health Info Reviewer Spec
+Health Info Supv
+Health Services Physician
+Helper
+Highway Foreman 1
+Highway Foreman 2
+Highway Sign/Pav Mark Sup
+Horticultural Attend
+Horticultural Attend/Fore
+Horticultural Attend/Ldr
+Horticultural Attend/Supt
+Horticulturist
+Horticulturist Mgr
+Hosp Admissions 1
+Hosp Admissions 3
+Hosp Admissions Tech 2
+Hosp Admissions Tech 4
+Hosp Admissions Tech 5
+Hosp Admissions Tech 7
+Hous Asst Mgr
+Hous Client Svcs Spec
+Hous Fin Deputy Admin
+Hous Fin Mgr
+Hous Fin Spec 1
+Hous Fin Spec 2
+Hous Inspector 1
+Hous Inspector 2
+Hous Tenant Cert Coord
+Housekeeper
+Housekeeper Supervisor
+Housing Admin
+Housing Director
+Housing Finance Admin
+Housing Finance Spec 3
+Housing Finance Supv
+Housing Mgr A
+Housing Mgr B
+Housing Spec 1
+Housing Spec 2
+Housing Spec 3
+Housing Spec 4
+Housing Supv
+Hr Analyst A
+Hr Analyst B
+Hr Analyst C
+Hr Asst Div Admin
+Hr Cons A
+Hr Cons B
+Hr Cons C
+Hr Cons Spec
+Hr Cons Sup
+Hr Dir A
+Hr Dir B
+Hr Dir C
+Hr Dir D
+Hr Div Admin
+Hr Man A
+Hr Man B
+Hr Specialist
+Hr Sup
+Hvac/Control Superintend
+Hvac/Control Tech
+Hvac/Control Tech Foreman
+Hvac/Control Tech Master
+Hvac/Refrig Master Mech
+Hvac/Refrig Mech Foreman
+Hvac/Refrig Mechanic
+Illustrator
+Immunization Prog Cons
+Immunization Prog Cons Tr
+Immunization Prog Supv
+Info System Director
+Info Tech Dep Dir 2
+Info Tech Dir 4
+Infor Services Staff Mem
+Information Officer
+Inspector
+Inst Res Staff Member
+Instit Architect
+Instit Engineer
+Instructor
+Instructor'S Aid
+Insur Admin
+Insurance Manager
+Insurance Specialist 1
+Insurance Specialist 2
+Insurance Specialist 3
+Insurance Supervisor\
+Insurance Technician 2
+Internal Auditor
+Interpreter
+Interpretive Ranger 1
+Interpretive Ranger 2
+Interpretive Ranger 3
+Interviewer
+Investigation Super
+Investigative Spec
+Investigative Spec 1
+Investigative Spec 2
+Investigative Spec 3
+Investigative Spec Supv
+Investigator
+Investments Officer 2
+Investments Officer 3
+It Appl Manager 1
+It Appl Manager 2
+It Appl Prog 1
+It Appl Prog 2
+It Appl Prog/Analyst 1
+It Appl Prog/Analyst 2
+It Appl Prog/Analyst 3Dcl
+It Appl Project Leader
+It Center Oper Mgr 2
+It Deputy Director 1
+It Director 1
+It Director 2
+It Director 3
+It Equip Oper 1
+It Equip Oper 2
+It Equip Oper 3
+It Geo Manager
+It Geo Project Supv
+It Geo Senior Supp Anyl
+It Geo Supp Analyst
+It Geo Technical Spec/Dcl
+It Liaison Officer 1
+It Liaison Officer 2
+It Liaison Officer 3
+It Liaison Officer 4
+It Liaison Officer Mgr
+It Liaison Officer Supv
+It Management Cons 2/Dcl
+It Management Cons Supv
+It Managment Consult 1
+It Office Spec 1
+It Office Spec 2
+It Office Spec 3
+It Oper Mgr
+It Oper Shift Supv
+It Prod Control Supv
+It Prod Control Tech 2
+It Prod Control Tech 3
+It Statewide Asst Dir
+It Stwd Director
+It Stwd Proj Ldr
+It Stwd Proj Off
+It Stwd Syst Analyst 1
+It Stwd Syst Analyst 2
+It Stwd Syst Asst Dir
+It Stwd Syst Dep Dir
+It Stwd Syst Manager
+It Stwd Syst Prog Anyl
+It Tech Supp Analyst 1
+It Tech Supp Analyst 2
+It Tech Supp Consult/Dcl
+It Tech Supp Manager
+It Tech Supp Spec 1
+It Tech Supp Spec 2
+It Tech Supp Spec 3
+It Tech Supp Supv
+It Tele Tech Svcs Admin
+It Telecomm Admin
+It Telecomm Analyst Mgr 1
+It Telecomm Analyst Mgr 2
+It Telecomm Tech Anyl 1
+It Telecomm Tech Anyl 2
+It Telecomm Tech Anyl 3
+Jr Counselor
+Juv Just Spec 1
+Juv Just Spec 2
+Juv Just Spec 3
+Juv Just Spec 4
+Juv Just Spec 5
+Juv Just Spec 6
+Lab Assistant
+Lab Info Sys Specialist
+Lab Metrologist
+Lab Tech 3
+Lab Tech Asst 1
+Lab Tech Asst 2
+Lab Tech Asst 3
+Lab Tech Asst Sup
+Lab Tech Man
+Lab Tech Sup
+Lab Technician 1
+Lab Technician 2
+Lab Technologist
+Labor Mkt Econ Res Anal
+Labor Mkt Spec 1
+Labor Mkt Spec 2
+Labor Mkt Spec 3
+Labor Mkt Spec Mgr
+Labor Mkt Spec Supv
+Laborer
+Land Mgr
+Land Spec 1
+Land Spec 2
+Land Spec 3
+Land Specialist 4
+Landscape Architect
+Laundry Worker 2
+Law Clerk
+Law Enf Train Cons 1
+Law Enf Train Cons 2
+Law Enf Train Cons 3
+Law Enf Train Cons Mgr
+Law Enf Train Cons Supv
+Law Enf Train Coord
+Lecturer
+Legis Assistant
+Lev Brd Operations Supt
+Levee Foreman A
+Levee Foreman B
+Levee Foreman C
+Levee Maintenance Supt
+Lhsc Prog Coord
+Lhsc Prog Coord 2
+Lhsc Prog Coord 3
+Liaison Officer
+Librarian
+Librarian 2
+Librarian 3
+Librarian Assistant
+Library Aide
+Library Consultant
+Library Manager 1
+Library Manager 2
+Library Manager 3
+Library Specialist 1
+Library Specialist 2
+Library Specialist 3
+Library Specialist Supv
+Library Technician
+Licensing Analyst 1
+Licensing Analyst 2
+Licensing Analyst Supv
+Licensing Cons
+Licensing Spec 1
+Licensing Spec 2
+Licensing Supv
+Lieutenant Governor
+Life Guard
+Locksmith
+Locksmith Master
+Long Trm Cr Hos Adm
+Long Trm Cr Hos Asc Adm
+Machinist
+Machinist Foreman
+Machinist Master
+Main Oper Officer
+Maint Super
+Maintenance Foreman
+Maintenance Man
+Maintenance Repair 1
+Maintenance Repair 2
+Maintenance Repair Master
+Management Analyst 1
+Management Analyst 2
+Management Intern
+Manager
+Marina Manager
+Marine Chief Engineer
+Marine Deck/Toll Collect
+Marine Deckhand
+Marine Dredge Captain
+Marine Engineer 2
+Marine Maintenance Supt 1
+Marine Maintenance Supt 2
+Marine Master 2
+Marine Master 3
+Marine Mechanic 2
+Marine Operations Supt 1
+Marine Operator 2
+Marine Operator 3
+Marine Terminal Manager 2
+Marine Terminal Supt
+Marine Trades Helper
+Marketing Intern
+Marketing Rep 1
+Marketing Rep 2
+Mass Communicatn Sp
+Master Instructor
+Mech Body Repair 2
+Mech Supv A
+Mech Supv B
+Mechanic
+Mechanic 1
+Mechanic 2
+Mechanic 3
+Mechanic 4
+Med Assistant
+Med Cert Spec 1
+Med Cert Spec 2
+Med Cert Supv
+Med Dept Director
+Med Malpractice Compl Dir
+Media Cent Prod Ast
+Medicaid Anal 1
+Medicaid Anal 2
+Medicaid Anal 3
+Medicaid Anal Supv
+Medicaid Area Mgr 1
+Medicaid Area Mgr 2
+Medicaid Asst Reg Admin
+Medicaid Deputy Director
+Medicaid Director
+Medicaid Prog Mgr 1A
+Medicaid Prog Mgr 1B
+Medicaid Prog Mgr 2
+Medicaid Prog Mgr 3
+Medicaid Prog Mgr 4
+Medicaid Prog Spec
+Medicaid Prog Supv
+Medicaid Program Monitor
+Medicaid Program Spec 1
+Medicaid Program Spec 2
+Medicaid Reg Admin
+Medical Asst Director
+Medical Cert Manager 1
+Medical Cert Manager 2
+Medical Cert Prog Mgr
+Medical Lab Manager 2
+Medical Lab Techno 2
+Medical Lab Techno 3
+Medical Lab Techno Supv
+Medical Sonographer 2
+Medical Specialist
+Mem Bd Or Commiss
+Ment Hosp Admin 2
+Ment Hosp Assoc Admin 2
+Mental Hosp Admin 3
+Mental Hosp Assoc Admin 3
+Mh Center Mgr A
+Mh Center Mgr B
+Mh Prog Dir A
+Mh Program Director B
+Mh Regional Dir
+Min Product Analyst 1
+Min Product Analyst 2
+Min Product Manager
+Min Product Specialist
+Min Product Supervisor
+Mobile Equip Oper 1/Heavy
+Mobile Equip Oper 2/Heavy
+Mobile Equip Oper/Light
+Mobile Equip Operator 1
+Mobile Equip Operator 2
+Mot Veh Comp Analyst 1
+Mot Veh Comp Analyst 2
+Mot Veh Comp Analyst 3
+Mot Veh Comp Analyst 4
+Mot Veh Comp Supv 1
+Mot Veh Comp Supv 2
+Mot Veh Manager 1
+Mot Veh Manager 2
+Mot Veh Office Mgr 1
+Mot Veh Office Mgr 2
+Mot Veh Office Mgr 3
+Motor Veh Administrator
+Motor Veh Dist Mgr/Field
+Mr/Dd Reg Adm/Pinecr
+Mr/Dd Reg Assoc Adm 3
+Mr/Dd Reg Assoc Adm 4
+Mr/Dd Reg Assoc Admin/Pin
+Museum Curatorial Svc Dir
+Museum Dir/Branch
+Museum Division Director
+Museum Historian
+Museum Special Proj Coor
+Navigat Lock Operator 1
+Navigat Lock Operator 2
+Nonteaching Professional
+Nuisance Animal Trapper 2
+Nurse Aide Trainee
+Nurse Practical
+Nurse Practitoner
+Nurse Registered
+Nursing Asst 1
+Nursing Asst 2
+Nursing Care Asst
+Nursing Unit Aide
+Nutrition Educator 1
+Nutrition Educator 2
+Nutritionist
+Oad Clinic Mgr
+Oad Inpatient Facil Mgr
+Oad Reg Adm
+Occup Therapist 2
+Occup Therapist 3
+Occup Therapist Manager
+Occup Therapist Supv
+Occup Therapy Assistant 2
+Occup Therapy Tech
+Ocdd Active Treat Sp 1
+Ocdd Active Treat Sp 2
+Ocdd Active Treat Sp 3B
+Ocdd Active Treat Sp 4
+Ocdd Therapy Svcs Dir
+Office Assistant
+Office Manager
+Oper Engr Foreman
+Oper Engr Foreman-Cogen
+Oper Engr Master
+Oper Engr-Cogeneration
+Operating Engineer 1
+Operating Engineer 2
+Operating Engineer Supt
+Operations Manager
+Orl Lev Bd Oper/Main Coor
+Orl Lev Bd Oper/Main Dir
+Ors Chief
+Ors Mgr 1
+Ors Mgr 2
+Ors Spec 1
+Ors Spec 2
+Ors Spec 3
+Ors Spec 4
+Ors Supv
+Ors Techn Spec
+Osha Consult Mgr
+Osha Consult Safe/Hlth Su
+Osha Indus Hth Hyg Cons
+Osha Occupation Saf Cons
+Osha Safety Cons Trainee
+P E Shop Foreman
+P E Truck Driver
+Painter
+Painter Foreman
+Painter Master
+Paraeducator
+Paralegal
+Paralegal 1
+Paralegal 2
+Paraprofessional Super
+Parish Hwy Maint Supt
+Park Attendant
+Park Manager 1
+Park Manager 2
+Park Manager 3
+Park Manager 4
+Park Manager 5
+Park Ranger 1
+Park Ranger 2
+Park Ranger Specialist
+Parks Bldgs/Grnds Attend
+Parks District Manager
+Parks Prog Cons
+Parks Prog Manager
+Parks Prog Supervisor
+Parks Program Analyst
+Parks Regional Mgr
+Permits Coordinator
+Personnel Div St Member
+Personnel Officer
+Personnel Tech
+Petro Analyst Adv
+Petro Analyst Mgr
+Petro Analyst Supv
+Petro Lands Asst Dir
+Petro Lands Director
+Ph Epi Tech 2
+Ph Lab Asst Dir
+Ph Lab Dir
+Ph Lab Sci 1
+Ph Lab Sci 2
+Ph Lab Sci 3
+Ph Lab Sci Mgr
+Ph Lab Sci Res Assoc
+Ph Lab Sci Supv
+Ph Lab Sci Tech Master
+Pharmacist
+Pharmacist 2
+Pharmacist 3
+Pharmacist 4
+Pharmacist 5-A
+Pharmacist 5-B
+Pharmacist 6
+Pharmacist 7
+Pharmacist 8
+Pharmacist-Coo
+Pharmacist/Compl Off
+Pharmacy Tech 2
+Phlebotomist 1
+Phlebotomist 2
+Phlebotomist 3
+Photographer
+Photographer 3
+Physical Plant Director
+Physical Therapist 2
+Physical Therapist Asst
+Physical Therapy Tech
+Physical Therary Supv
+Physician
+Physician I
+Physician Ii
+Physician Iii
+Physician Iv
+Physician V
+Piledriver
+Piledriver Foreman
+Planner
+Planner/Estimator
+Plasterer Master
+Plumber Foreman
+Plumber/Pipefitter
+Plumber/Pipefitter Fore
+Plumber/Pipefitter Master
+Police Captain-A
+Police Chief-A
+Police Investigator
+Police Lieutenant-A
+Police Major-A
+Police Officer
+Police Officer 1-A
+Police Officer 2-A
+Police Officer 3-A
+Police Radio Dispatcher
+Police Sergeant-A
+Policy Planner 1
+Policy Planner 2
+Policy Planner 3
+Policy Planner 4
+Policy Planner 5
+Port Administrative Dir 1
+Port Facil Maint Foreman
+Port Facil Maint Mgr
+Port Facil Maint Mst Mech
+Port Facil Maint Spec 1
+Port Facil Maint Spec 2
+Port Facil Maint Spec 3
+Port General Agent
+Port Manager A
+Port Manager B
+Port Manager C
+Port Manager D
+Port Operations Asst Dir
+Port Operations Dir 1
+Porter
+Postdoc Research Scientis
+Poultry Grader
+Pract Nurse/Licensed, 1
+Pract Nurse/Licensed, 2
+Pract Nurse/Licensed, 3
+Pres/Chmn Bd Or Comm
+President
+Press Secretary
+Principal
+Principal Asst
+Printing Apprentice
+Printing Assistant Supt
+Printing Master Operator
+Printing Operator 1
+Printing Operator 2
+Printing Superintendent
+Printing Supervisor
+Pris Ent Agric Mgr
+Pris Ent Ast Dep Dir
+Pris Ent Dir
+Pris Ent Indust Mgr
+Pris Ent Market Mgr
+Prison Enter Asst Supv
+Prison Enter Deputy Dir
+Prison Enter Farm Manager
+Prison Enter Farm Supv
+Prison Enter Qua Assr Cor
+Prison Enter Reg Mgr
+Prison Enter Supv
+Priv Secretary-Dept Head
+Prob & Par Spec - Adult
+Prob/Par Asst Dir/Adult
+Prob/Par Dep Dir/Adult
+Prob/Par Director--Adult
+Prob/Par Dist Mgr 2/Juv
+Prob/Par Dist Mgr 3/Juv
+Prob/Par Dist Mgr A/Adult
+Prob/Par Dist Mgr B/Adult
+Prob/Par Off 1/Juv
+Prob/Par Off 2/Juv
+Prob/Par Off 3/Juv
+Prob/Par Officer 1/Adult
+Prob/Par Officer 2/Adult
+Prob/Par Officer 3/Adult
+Prob/Par Prog Mgr 2/Juv
+Prob/Par Prog Mgr/Adult
+Prob/Par Prog Spec/Juv
+Prob/Par Reg Admin/Adult
+Prob/Par Supervisor/Adult
+Prob/Par Supv/Juv
+Procurement Dir 1
+Procurement Dir 2
+Procurement Dir 3
+Procurement Dir 4 Exmpt
+Procurement Mgr 1 Exmpt
+Procurement Mgr 1 N-Exmpt
+Procurement Mgr 2 Exmpt
+Procurement Mgr 2 N-Exmpt
+Procurement Spec 1
+Procurement Spec 2
+Procurement Spec 3
+Procurement Spec 4 Exempt
+Prof Counselor 1
+Prof Counselor 2
+Prof Counselor 3
+Prof Counselor 4
+Professional Chemist 1
+Professional Chemist 2
+Professional Chemist 3
+Professional Counselor 5
+Professional Inst
+Professor
+Prog Compl Off 1
+Prog Compl Off 2
+Prog Compl Off 3
+Prog Compl Off Mgr
+Prog Compl Off Supv
+Prog Mgr 3 - Ss
+Prog Mgr 4 - Ss
+Program Assistant
+Program Consult--Soc Ser
+Program Dev Writer
+Program Manager
+Program Manager 1/Soc Svc
+Program Manager 2/Soc Svc
+Program Manager 4/Dhh
+Program Mgr 1A/Dhh
+Program Mgr 1B/Dhh
+Program Mgr 2/Dhh
+Program Mgr 3/Dhh
+Program Monitor Supv/Dhh
+Program Monitor/Dhh
+Program Specialist/Soc Sv
+Program Supervisor
+Project Advisor
+Project Analyst 1
+Project Analyst 2
+Project Coordinator
+Project Developer
+Project Director
+Project Leader
+Project Manager
+Project Supervisor
+Property Control Officer
+Psc Enf Agt 1
+Psc Enf Agt 2
+Psc Enf Agt 3
+Psc Trans Admin
+Psych Aide 1
+Psych Aide 2
+Psych Aide 3
+Psych Aide Supervisor 1
+Psych Aide Supervisor 2
+Psychiatrist
+Psychologist
+Psychologist 1
+Psychologist 2
+Psychologist 3
+Psychologist 4
+Psychologist 5
+Pub Hth Epi Spec
+Pub Hth Epidemiol
+Pub Hth Epidemiol Mgr
+Pub Hth Epidemiol Supv
+Pub Hth Executive Direct
+Pub Hth Nut 2
+Pub Hth Nut 3
+Pub Hth Nut 4
+Pub Hth Nut 5
+Pub Hth Nut Educator
+Pub Hth Regional Adm
+Pub Info Dir 1
+Pub Info Dir 2
+Pub Info Dir 3
+Pub Info Off 1
+Pub Info Off 2
+Pub Info Off 3
+Pub Lands Analyst 2
+Pub Lands Analyst 3
+Pub Lands Field Off 2
+Pub Svc Com Consumer Spec
+Public Administrator
+Public Affairs Off
+Public Infor Off
+Public Lands Adm
+Public Lands Records Mgr
+Public Lands Utilizat Mgr
+Public Relations
+Public Relations Director
+Purchasing Agent
+Purchasing Clerk
+Purchasing Director
+Purchasing Officer
+Quality Assurance Coor
+Rad Tech Manager
+Rad Tech Supv
+Radiol Technologist 2
+Radiol Technologist 3
+Randolph Shep Mgmt Anl
+Randolph Shep Mgmt Anl Tr
+Randolph Shep Prog Mgr
+Range Keeper
+Real Est/Appr Hear Exam
+Receptionist
+Records Manage Officer
+Recovery Analyst 2
+Recovery Spec
+Recovery Supv
+Recreational Super
+Recruiter
+Reg Diet/Nutr Svcs Adm
+Regional Director
+Regist Diet Specialist
+Regist Diet Supv
+Regist Diet/Nutr Svcs Dir
+Regist Dietician
+Registrar
+Rehab Aide
+Rehab Bureau Admin
+Rehab Comm Svcs Mgr 3
+Rehab Community Svc Mgr 2
+Rehab Couns Assoc
+Rehab Couns/Master
+Rehab Counselor
+Rehab Counselor/Entry
+Rehab District Supv
+Rehab Employ Develop Spec
+Rehab Eval Supv
+Rehab Eval/Master
+Rehab Evaluator
+Rehab Evaluator--Entry
+Rehab Instructor 2
+Rehab Prog Coord
+Rehab Prog Mgr
+Rehab Program Specialist
+Rehab Regional Manager 1
+Rehab Regional Mgr 2
+Rehab Services Asst Dir
+Rehab Services Director
+Rehab Spec 2
+Rehab Spec/Master
+Rehab Specialist 1
+Repairman
+Representative
+Res Farm Maint Mgr
+Research Assistant
+Research Associate
+Research Farm Asst 1
+Research Farm Asst 2
+Research Farm Manager 2
+Research Farm Mgr 1
+Research Farm Spec 1
+Research Farm Spec 2
+Research Farm Supervisor
+Research Scientist
+Resid Svcs Spec 1
+Resid Svcs Spec 2
+Resid Svcs Spec 3
+Resid Svcs Spec 4
+Resid Svcs Spec 5
+Resid Svcs Spec 6
+Resid Svcs Spec 7
+Resid Svcs Spec 8
+Resident Trainee
+Residential Advisor 1
+Residential Advisor 2
+Residential Advisor 3
+Residential Advisor Supv
+Respir Care Ther 2/Cert
+Respir Care Ther 2/Reg
+Ret Ben Asst Admin
+Ret Ben Educator
+Ret Ben Supv
+Retire Ben Admin
+Retire Ben Spec
+Retire Benefits Analyst 1
+Retire Benefits Analyst 2
+Retire Benefits Analyst 3
+Retire Benefits Mgr
+Rev Mgt Consul
+Rev Tax Audit Mgr
+Rev Tax Officer 1
+Rev Tax Officer 2
+Rev Tax Officer Supv
+Rev Tax Research Analyst
+Revenue Tax Analyst 1
+Revenue Tax Analyst 2
+Revenue Tax Analyst 3
+Revenue Tax Analyst Supv
+Revenue Tax Asst Dir
+Revenue Tax Aud Spec
+Revenue Tax Aud Supv
+Revenue Tax Auditor 1
+Revenue Tax Auditor 2
+Revenue Tax Auditor 3
+Revenue Tax Director
+Revenue Tax Officer Mgr
+Revenue Tax Spec 1
+Revenue Tax Spec 2
+Revenue Tax Spec 3
+Revenue Tax Spec Supv
+Right Of Way Agent 1
+Right Of Way Agent 2
+Right Of Way Agent 3
+Right Of Way Agent 4
+Right Of Way Agent 6
+Right Of Way Agent 7
+Right Of Way Agent 8
+Right Of Way Appraiser 2
+Right Of Way Appraiser 3
+Right Of Way Appraiser 4
+Right Of Way Appraiser 5
+Rn 1
+Rn 2
+Rn 3
+Rn 4
+Rn Adv Practice
+Rn Asst Dir Nursing A
+Rn Asst Dir Nursing B
+Rn Compliance Officer
+Rn Dir Nursing A
+Rn Dir Nursing B
+Rn Manager House
+Rn Prog Consultant
+Rn Reg Manager
+Rn Supervisor A
+Rn Supervisor B
+Rn/Manager
+Rn/Nursing Practice Cons
+Rn/Program Coordinator
+Roadsd Devel Dist Coor Tr
+Roadsd Devel Herbic Applc
+Roadside Devel Dist Coor
+Roadside Development Mgr
+Rsd-Admin Business Offici
+Rsd-Admin Chief Officers
+Rsd-Admin Facilities Mana
+Rsd-Admin Health Services
+Rsd-Admin Other Pupil Sup
+Rsd-Admin Other Spec Prog
+Rsd-Admin Regular Program
+Rsd-Admin Superintendent
+Rsd-Cler Attend And Child
+Rsd-Cler Bilingual
+Rsd-Cler Chief Officers
+Rsd-Cler Other Pupil Supp
+Rsd-Cler Other Spec Progr
+Rsd-Other Buildings Servi
+Rsd-Other It
+Rsd-Other Parental Involv
+Rsd-Other Security
+Rsd-Paraed Pre K
+Rsd-Paraed Regular Progra
+Rsd-Paraed Special Ed
+Rsd-Prof Budget Analyst
+Rsd-Prof School Nurse
+Rsd-Teach Bilingual
+Rsd-Teach Elementary
+Rsd-Teach Gifted And Tale
+Rsd-Teach Pre K
+Rsd-Teach Special Educati
+Rsd-Ther Guidance Counsel
+Rsd-Ther Speech Pathologi
+Safety Program Coor
+Safety Program Coord Tr
+Safety Risk Agency Dir
+Safety Risk Agency Mgr
+Sanitarian 1
+Sanitarian 2
+Sanitarian 3
+Sanitarian 4
+Sanitarian 5
+Sanitarian 6
+Sanitarian 7
+Sanitarian 8
+Scientific Observer
+Scientific Res Technol 1
+Scientific Res Technol 2
+Seamstress
+Sec Board Of Comm
+Secretary
+Secretary Of State
+Secretary-Treasurer
+Sect - Head Of Dept
+Section Chief
+Security Officer
+Seed Germ Analyst 1
+Seed Germin Analyst 2
+Seed Germin Analyst Supv
+Seed Purity Anal Supv
+Seed Purity Analyst 1
+Senior Research
+Sheet Metal Foreman
+Sheet Metal Master
+Sheet Metal Worker
+Skilled Craftsman
+Soc Serv Anal 1
+Soc Serv Anal 2
+Soc Serv Anal 3
+Soc Serv Anal Supv
+Soc Svc Couns 3
+Soc Svc Couns 4-A
+Soc Svc Couns 4-B
+Soc Svc Couns 5-A
+Soc Svc Couns 5-B
+Soc Svc Counselor 1
+Soc Svc Counselor 2
+Soc Svcs Supv
+Social Security Prog Dir
+Social Services Spec 2
+Social Wkr 1
+Social Wkr 2
+Social Wkr 3
+Social Wkr 4
+Social Wkr 5/B
+Social Wkr 6/B
+Social Wkr 7
+Social Worker
+Social Worker 5-A
+Social Worker 6-A
+Sp Assistant Superintende
+Sp Dep Supt/Invest
+Special Assistant
+Special Counsel
+Special Proj Off
+Specialist
+Specimen Collector
+Speech Therapist
+Speech/Aud Mgr
+Speech/Aud Prog Mgr 2
+Speech/Aud Spec 1
+Speech/Aud Spec 3
+Sports Writer
+St Account System Mgr
+St Acct System Supv
+St Acctg System Cons 4
+St Acctg System Director
+St Archaeologist
+St Auditor 1
+St Auditor 2
+St Auditor 3
+St Budg Mgmt Anly 4
+St Budget Manager
+St Budget Mgmt Anal 1
+St Budget Mgmt Anal 2
+St Budget Mgmt Anal 3
+St Buildings Director
+St Cap Outlay Tech Admin
+St Capital Outlay Anly 2
+St Capital Outlay Mgr A
+St Cont/Grants Supv
+St Contr/Grants Ass Admin
+St Data Res Officer
+St Dep Dir Plan/Budget
+St Dir Plan/Budget
+St Fire Marshal Asst Chf
+St Fire Marshal Cpt
+St Fire Marshal Dep 1
+St Fire Marshal Dep 2
+St Fire Marshal Dist Chf
+St Fire Marshal Snr Dep
+St Fiscal Anly 1
+St Fiscal Anly 3
+St Fiscal Anly 4
+St Fiscal Anly 5
+St Leasing Anly 1
+St Leasing Anly 3
+St Leasing Anly 4
+St Leasing Anly 5
+St Loss Prev Mgr
+St Loss Prev Supv
+St Procurement Dep Direct
+St Purchasing Asst Dir
+St Purchasing Dir
+St Purchasing Mgr
+St Purchasing Off 1
+St Purchasing Off 2
+St Purchasing Off 3
+St Risk Adjuster 1
+St Risk Adjuster 2
+St Risk Adjuster 3
+St Risk Adjuster 4
+St Risk Adjuster 5
+St Risk Adjuster 6
+St Risk Administrator
+St Risk Assistant Dir
+St Risk Director
+St Risk Underwriter 1
+St Risk Underwriter 2
+St Risk Underwriting Supv
+St Statistics Spec
+St Treas Debt Analyst 1
+St Treas Debt Analyst 2
+St Treas Debt Analyst 3
+St Treas Debt Officer
+St Treas Fis Con Analy 3
+St Treas Fis Con Director
+St Treas Fis Con Man
+St Treas Fis Cont Analy 1
+St Treas Fis Cont Analy 4
+St Treasury Inv Off 2
+St Treasury Inv Ops Off
+St Uniform Pay Analyst 1
+St Uniform Pay Analyst 2
+St Uniform Pay Analyst 3
+St Uniform Pay Asst Dir
+St Uniform Pay Director
+St Uniform Pay Manager
+Staff Assistant
+Staff Coordinator
+State Police Cadet
+State Police Captain
+State Police Captain - Un
+State Police Emer Svc Com
+State Police Emer Svc Dep
+State Police Emer Svc Sen
+State Police Emer Svc Tec
+State Police Lieutenant
+State Police Major
+State Police Master Pilot
+State Police Master Troop
+State Police Pilot
+State Police Polygraphist
+State Police Senior Pilot
+State Police Sergeant
+State Police Technical Su
+State Police Trooper
+State Superinten
+State Treasurer
+Statistical Tech 1
+Statistical Tech 2
+Statistician
+Statistician 1
+Statistician 2
+Steward
+Stock Clerk
+Strategist
+Stud Services Div St Mem
+Student
+Student Fin Aid Spec 3
+Student Finan Aid Admin
+Student Finan Aid Dir
+Student Loan Off
+Student Resid Houseparent
+Student Services Director
+Student Worker
+Super Of Plant
+Superintendent
+Supervising Teacher
+Supervisor
+Surgical Technician 2
+Surveyor 4
+Surveyor 5
+Surveyor Intern 1
+Switchboard Operator
+Systems Support Analyst
+Tax Comm Adm
+Tax Comm Property Tax Spe
+Tax Comm Spec 3
+Tax Commission Asst Dir
+Tax Commission Director
+Tax Commission Spec 1
+Tax Commission Spec 2
+Tax Commission Supv
+Teach Professional
+Technical Assistant
+Technical Supervisor
+Technician
+Technologist
+Telecom Consultant 2
+Telecom Counsultant 1
+Terminal Operator
+Ther Rec Spec 2
+Ther Rec Spec 4
+Ther Recr Spec 1
+Thera Recr Spec 3-B
+Thera Recr Spec 3A
+Therapist
+Ticket Taker-Seller
+Tourism Inform Ast Reg Co
+Tourism Inform Couns 1
+Tourism Inform Couns 2
+Tourism Inform Couns 3
+Tourism Inform Reg Coor
+Tourism Program Director
+Tourism Supv
+Track Off Manager
+Tractor Driver
+Trade Apprentice
+Trades Helper
+Traffic Svc Cons/Man Mgr
+Train/Dev Prog Mgr
+Train/Dev Prog Staff Mg 1
+Train/Dev Prog Staff Mg 2
+Train/Dev Spec 1
+Train/Dev Spec 2
+Train/Dev Spec 3
+Trainer
+Training Officer
+Trans Permits Spec 1
+Trans Permits Spec 2
+Trans Permits Spec 3
+Transport Permits Mgr
+Transport Permits Supv 1
+Transport Permits Supv 2
+Treasurer
+Tumor Registry Mgr
+Tumor Registry Tech 2
+Tumor Registry Tech 3
+Tutor
+Tv Camera Operator
+Tv Camera Operator 2
+Tv Director
+Tv Eng 2
+Tv Eng 3
+Tv Eng Dir
+Tv Eng Section Mgr
+Tv Eng Trans Supv
+Tv Executive Producer
+Tv Light Dir Stage Mgr
+Tv Manager
+Tv Operations Supervisor
+Tv Producer
+Tv Production Manager
+Tv Programming Director
+Tv Senior Director
+Tv Senior Producer 1
+Tv Senior Producer 2
+Typist
+Ui Tax Agent 1
+Ui Tax Agent 2
+Ui Tax Agent 3
+Ui Tax Agent Mgr
+Undersecretary
+Univ Editor
+Utilities Administrator
+Utilities Specialist 1
+Utilities Specialist 3
+Utilities Specialist Supv
+Utility Laborer
+Vessel Capt
+Vessel Mate Eng
+Vet Asstc Couns Supv
+Vet Asstc Counselor 3
+Veterans Assn Couns 1
+Veterans Assn Couns 2
+Veterans Assn Par/Leg Cou
+Veterans Assn Region Mgr
+Veterinarian
+Veterinary Lab Spec 1
+Veterinary Lab Spec 2
+Veterinary Lab Tech
+Veterinary Lab Technol 2
+Veterinary Lab Technol Su
+Vice President
+Vice Principal
+Vice-Chairman
+Vice-Chancellor
+Vice-President
+Warehouse Manager
+Warehouse Supervisor
+Welder
+Welder Foreman
+Welder Master
+Wildlf Enf Agent
+Wildlf Enf Cadet
+Wildlf Enf Captain
+Wildlf Enf Colonel
+Wildlf Enf Lieut
+Wildlf Enf Lieut Col
+Wildlf Enf Major
+Wildlf Enf Senior Agent
+Wildlf Enf Sergeant
+Wildlf/Fish Tech 3
+Wildlf/Fish Tech 4
+Wildlf/Fish Tech Supv
+Wildlf\Fish Tech 1
+Wildlfe/Fish Tech 2
+Wkr Comp Dist Judge
+Wlf Compl Analyst A
+Wlf Compl Analyst B
+Wlf Compl Analyst C
+Wlf Compl Dir
+Wlf Compl Mgr
+Wlf Compl Supv
+Work Dev Spec 1
+Work Dev Spec 10
+Work Dev Spec 2
+Work Dev Spec 3
+Work Dev Spec 4
+Work Dev Spec 5
+Work Dev Spec 6
+Work Dev Spec 7
+Work Dev Spec 8
+Work Dev Spec 9
+Wrk Comp Compl Analyst 2
+Wrk Comp Compl Mgr
+Wrk Comp Compl Supv
+Wrk Comp Disp Resl Spec 1
+Wrk Comp Disp Resl Spec 2
+Wrk Comp Div Judge
+Wrk Comp Judge/Chief
+Wrk Comp Med Svcs Analyst
+Youth Facility Asst Dir
+Youth Facility Dep Dir
+Youth Facility Director

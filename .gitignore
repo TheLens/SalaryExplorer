@@ -1,3 +1,6 @@
 *.cfg
 *.pyc
 *.gz
+*.DS_Store
+*.idea
+misc

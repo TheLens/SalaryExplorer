@@ -16,40 +16,65 @@ def repo():
     local('git add .travis.yml')
     local('git add README.md')
     local('git add fabfile.py')
-    local('git add index.html')
     local('git add requirements.txt')
-
-
-def css():
-    '''/css'''
-
-    local('git add css/state-salaries.css')
-    local('git add css/lens.css')
 
 
 def data():
     '''/data/export/'''
+
     local('git add data/export/data.csv')
+    local('git add data/export/highest-paid.csv')
+
+    local('git add data/export/departments.txt')
+    local('git add data/export/offices.txt')
+    local('git add data/export/positions.txt')
+
+
+def css():
+    '''/statesalaries/static/css'''
+
+    local('git add statesalaries/static/css/state-salaries.css')
+    local('git add statesalaries/static/css/lens.css')
 
 
 def js():
-    '''/css'''
+    '''/statesalaries/static/js'''
 
-    local('git add js/state-salaries.js')
+    local('git add statesalaries/static/js/state-salaries.js')
+
+
+def templates():
+    '''/statesalaries/templates'''
+
+    local('git add index.html')
+
+
+def scripts():
+    '''/scripts'''
+
+    local('git add scripts/check.sh')
+    local('git add scripts/clean.py')
+    local('git add scripts/export.sh')
+    local('git add scripts/import.sh')
+    local('git add scripts/main.sh')
+    local('git add scripts/prepare_data.py')
+    local('git add scripts/process.sh')
+    local('git add scripts/util.py')
 
 
 def addthemall():
     '''Run through entire deployment.'''
 
     repo()
-    css()
     data()
+    css()
     js()
+    scripts()
 
 
 def push():
-    local('git push origin master')
+    local('git push origin develop')
 
 
 def pull():
-    local('git pull origin master')
+    local('git pull origin develop')

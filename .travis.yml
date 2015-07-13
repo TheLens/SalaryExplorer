@@ -6,14 +6,19 @@ script:
 - rm README.md
 - rm fabfile.py
 before_deploy:
-# - rm -rf scripts
-# - rm -rf citysalaries/__init__.py
-# - rm -rf citysalaries/app.py
-# - rm -rf citysalaries/lib
-# - rm -rf citysalaries/templates
-# - mv citysalaries/static/* . # Move to /neworleans/
+- rm -rf scripts
+- rm -rf citysalaries/templates
+- mv citysalaries/static/* . # Move to /neworleans/
 - gzip -9 data/export/data.csv
-# - mv data/export/data.csv.gz data/export/data.csv
+- gzip -9 data/export/highest-paid.csv
+- gzip -9 data/export/departments.txt
+- gzip -9 data/export/offices.txt
+- gzip -9 data/export/positions.txt
+- mv data/export/data.csv.gz data/export/data.csv
+- mv data/export/highest-paid.csv.gz data/export/highest-paid.csv
+- mv data/export/departments.txt.gz data/export/departments.txt
+- mv data/export/offices.txt.gz data/export/offices.txt
+- mv data/export/positions.txt.gz data/export/positions.txt
 deploy:
   provider: s3
   access_key_id: AKIAIWQKYAETOQ2N7CBQ
@@ -27,5 +32,5 @@ deploy:
   skip_cleanup: true
   acl: public_read
   on:
-    repo: TheLens/StateSalaries
-    branch: master
+    repo: TheLens/statesalaries
+    branch: develop
